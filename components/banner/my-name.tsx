@@ -7,7 +7,7 @@ export default function MyName() {
 
   return (
     <div className="">
-      <h1 className=" text-special-text font-bold text-2xl">Shadrack James</h1>
+      <h1 className=" text-special-text font-bold text-3xl">Shadrack James</h1>
     </div>
   );
 }
