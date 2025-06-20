@@ -6,6 +6,7 @@
   --primary-text: #ffffff;
   --content-text: #e0e0e0;
   --primary-button: #14b8a6;
+  --special-text: #14b8a6;
   --secondary-button: #ef4444;
 }
 
@@ -14,6 +15,7 @@
   --color-foreground: var(--foreground);
   --color-primary-text: var(--primary-text);
   --color-content-text: var(--content-text);
+  --color-special-text: var(--special-text);
   --color-primary-button: var(--primary-button);
   --color-secondary-button: var(--secondary-button);
 
