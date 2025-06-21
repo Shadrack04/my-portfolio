@@ -16,7 +16,7 @@ export default function Banner() {
   return (
     <div className="  ">
       <MyName />
-      <div className=" flex gap-8">
+      <div className=" flex gap-6 justify-center">
         <div className="w-[60%]">
           <div>
             <h1 className=" text-white text-4xl font-bold mb-2">
