@@ -14,8 +14,8 @@ export default function Banner() {
     delaySpeed: 2000,
   });
   return (
-    <div className=" pb-20">
-      <MyName />
+    <div className=" pb-26">
+      {/* <MyName /> */}
       <div className=" flex gap-6 justify-center">
         <div className="w-[60%]">
           <div>
@@ -24,7 +24,7 @@ export default function Banner() {
               <Cursor />
             </h1>
           </div>
-          <div className=" ">
+          <div className=" my-8 ">
             <p className=" text-content-text w-[80%] text-lg/relaxed mb-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
               itaque corrupti hic, atque molestias at quaerat odio sapiente
