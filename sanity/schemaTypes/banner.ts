@@ -6,6 +6,10 @@ export const banner = defineType({
   type: "document",
   fields: [
     defineField({
+      name: "name",
+      type: "string",
+    }),
+    defineField({
       name: "title",
       type: "array",
       of: [{ type: "string" }],
