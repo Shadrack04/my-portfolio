@@ -14,17 +14,17 @@ export default function Banner() {
     delaySpeed: 2000,
   });
   return (
-    <div className="  ">
-      <MyName />
+    <div className=" pb-26">
+      {/* <MyName /> */}
       <div className=" flex gap-6 justify-center">
         <div className="w-[60%]">
           <div>
-            <h1 className=" text-white text-4xl font-bold mb-2">
+            <h1 className=" text-primary-text text-4xl font-bold mb-2">
               Hi, I&apos;m A <span>{text}</span>
               <Cursor />
             </h1>
           </div>
-          <div className=" ">
+          <div className=" my-8 ">
             <p className=" text-content-text w-[80%] text-lg/relaxed mb-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
               itaque corrupti hic, atque molestias at quaerat odio sapiente
@@ -37,7 +37,7 @@ export default function Banner() {
             <Button>Lets Connect</Button>
           </div>
         </div>
-        <div className="">
+        <div className=" rounded-xl overflow-hidden">
           <Image src={images.heroImage} alt="The developer's cartoon image" />
         </div>
       </div>
