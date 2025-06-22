@@ -14,7 +14,7 @@ export default function Banner() {
     delaySpeed: 2000,
   });
   return (
-    <div className=" pb-26">
+    <div className=" pb-28 border-b-2 border-primary-button">
       {/* <MyName /> */}
       <div className=" flex gap-6 justify-center">
         <div className="w-[60%]">
