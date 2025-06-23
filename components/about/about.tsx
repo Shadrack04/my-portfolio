@@ -4,7 +4,7 @@ import Stack from "../stack/stack";
 
 export default function About() {
   return (
-    <div className=" py-8">
+    <div className="costume-padding py-8 ">
       <div className=" flex flex-col items-center">
         <h1 className=" text-4xl font-bold">About Me</h1>
         <div className=" flex flex-col gap-0.5 mb-8">
