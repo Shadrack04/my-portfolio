@@ -28,6 +28,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
+.costume-padding {
+  @apply px-16;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
   }

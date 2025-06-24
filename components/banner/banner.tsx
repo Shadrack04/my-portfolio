@@ -14,7 +14,7 @@ export default function Banner() {
     delaySpeed: 2000,
   });
   return (
-    <div className=" pb-28 border-b-2 border-primary-button">
+    <div className="costume-padding pb-28 border-b-2 border-primary-button/50">
       {/* <MyName /> */}
       <div className=" flex gap-6 justify-center">
         <div className="w-[60%]">
