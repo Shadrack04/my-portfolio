@@ -34,11 +34,17 @@ export default function Banner() {
               ipsum doloremque itaque qui a laboriosam velit eum possimus ipsa
               numquam voluptas cupiditate recusandae neque facilis libero.
             </p>
-            <Button>Lets Connect</Button>
+            <div className=" mt-9">
+              <Button>Lets Connect</Button>
+            </div>
           </div>
         </div>
-        <div className=" rounded-xl overflow-hidden">
-          <Image src={images.heroImage} alt="The developer's cartoon image" />
+        <div className="  overflow-hidden">
+          <Image
+            src={images.heroImage}
+            alt="The developer's cartoon image"
+            className=" rounded-xl"
+          />
         </div>
       </div>
     </div>
