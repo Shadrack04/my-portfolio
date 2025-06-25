@@ -8,7 +8,8 @@
   --content-text: #676767d7;
   --hover-color: #26de81;
   --primary-button: #20bf6b;
-  --special-text: #14b8a6;
+  --primary-color: #20bf6b;
+  --special-text: #20bf6b;
   --secondary-button: #ef4444;
 }
 
@@ -16,6 +17,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-layout-background: var(--layout-background);
+  --color-primary-color: var(--primary-color);
 
   --color-primary-text: var(--primary-text);
   --color-content-text: var(--content-text);
