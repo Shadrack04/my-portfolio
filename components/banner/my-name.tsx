@@ -18,7 +18,7 @@ export default function MyName() {
   const show = scrollY > 150 ? "" : "hidden";
 
   return (
-    <div className={`${show} costume-padding mb-2 z-999 w-fit m-0`}>
+    <div className={`${show} mb-2 z-99 w-fit m-0`}>
       <p className=" text-special-text font-bold text-3xl">Shadrack</p>
     </div>
   );
