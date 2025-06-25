@@ -10,7 +10,7 @@ import { urlFor } from "@/sanity/lib/image";
 
 export default async function Banner() {
   return (
-    <div className="costume-padding pb-28 border-b-2 border-primary-button/50">
+    <div className="costume-padding pb-28 border-b-2 border-primary-color/50">
       {/* <MyName /> */}
       <div className=" flex gap-6 justify-center items-center">
         <div className="w-[50%]">
@@ -28,7 +28,7 @@ export default async function Banner() {
         <Image
           src={images.heroImage}
           alt="The developer's cartoon image"
-          className=" shadow-xs ring-4 ring-primary-color bg-amber-100 rounded-2xl "
+          className=" shadow-xs ring-4 ring-primary-color bg-amber-100 hover:skew-x-3 transition duration-300 hover:scale-105 rounded-2xl "
         />
       </div>
     </div>
