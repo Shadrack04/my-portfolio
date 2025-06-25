@@ -12,7 +12,7 @@ export default function Typewriter() {
   return (
     <div>
       <h1 className=" text-primary-text text-4xl  font-bold mb-2">
-        Hi, I&apos;m a SHADRACK
+        Hi, I&apos;m SHADRACK
         <br />
         <span className="tracking-widest text-special-text">
           {text}
