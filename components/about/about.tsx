@@ -8,8 +8,8 @@ export default function About() {
       <div className=" flex flex-col items-center">
         <h1 className=" text-4xl font-bold">About Me</h1>
         <div className=" flex flex-col gap-0.5 mb-8">
-          <div className=" w-40 h-0.5 bg-primary-button ml-4"></div>
-          <div className=" w-40 h-0.5 bg-primary-button"></div>
+          <div className=" w-40 h-0.5 bg-primary-color ml-4"></div>
+          <div className=" w-40 h-0.5 bg-primary-color"></div>
         </div>
         <p className=" w-[48rem] text-content-text text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsam
