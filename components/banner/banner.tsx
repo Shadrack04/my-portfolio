@@ -21,7 +21,10 @@ export default async function Banner() {
               Tailwind. Passionate about clean code, intuitive UX, and
               performance. Let's build something great together.
             </p>
-            <Button>Let's Connect</Button>
+            <div className=" flex items-center gap-4">
+              <Button type="primary">Let's Connect</Button>
+              <Button type="secondary">Resume</Button>
+            </div>
           </div>
         </div>
 

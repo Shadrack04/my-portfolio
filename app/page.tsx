@@ -7,9 +7,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className=" pt-38 bg-foreground px-8">
-      <div className="costume-padding sticky top-4">
-        <MyName />
-      </div>
+      <div className="costume-padding sticky top-4">{/* <MyName /> */}</div>
       <Banner />
       <About />
       <Projects />

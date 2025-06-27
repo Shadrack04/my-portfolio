@@ -88,7 +88,7 @@ export default function Experience() {
                   {item.date}
                 </TimelineDate>
                 <TimelineTitle className=" text-primary-text flex flex-col">
-                  <p className=" text-xl font-medium ">AGM Pulse</p>
+                  <p className=" text-xl font-medium ">AGM Tech Pulse</p>
                   <p className=" text-lg font-bold text-special-text">
                     {item.title}
                   </p>
