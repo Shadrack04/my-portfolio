@@ -21,7 +21,6 @@ const items = [
       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-      "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
     ],
   },
   {

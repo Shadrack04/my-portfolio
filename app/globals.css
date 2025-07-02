@@ -51,3 +51,9 @@ body {
   /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.hero-bg {
+  background-image: url(../assets/images/bg-image.webp);
+  background-position: center;
+  background-size: cover;
+}

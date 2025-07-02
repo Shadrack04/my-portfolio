@@ -1,6 +1,8 @@
 import About from "@/components/about/about";
 import Banner from "@/components/banner/banner";
 import MyName from "@/components/banner/my-name";
+import Contact from "@/components/contact/contact";
+import ContactForm from "@/components/contact/contact-form";
 import Projects from "@/components/projects/projects";
 import Image from "next/image";
 
@@ -11,6 +13,7 @@ export default function Home() {
       <Banner />
       <About />
       <Projects />
+      <Contact />
     </div>
   );
 }
