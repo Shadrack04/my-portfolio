@@ -25,7 +25,7 @@ export default function Info() {
           <Smartphone className=" text-primary-color size-8" />
           <div>
             <p className=" text-lg">Phone</p>
-            <p className=" text-content-text">0706 4350 081</p>
+            <p className=" text-content-text">+234 706 4350 081</p>
           </div>
         </div>
         <div className=" flex gap-4 ">

@@ -101,10 +101,10 @@ export default function Experience() {
               </TimelineHeader>
               <TimelineContent className="">
                 <ul className=" flex flex-col gap-1 p-4">
-                  {item.description?.map((task) => (
+                  {item.description?.map((task, index) => (
                     <li
                       className=" list-disc text-content-text text-lg/relaxed"
-                      key={task}
+                      key={index}
                     >
                       {task}
                     </li>
