@@ -13,7 +13,7 @@ export default function Stack() {
           These are some of the tools i use to create aesthetic magic
         </p>
       </div>
-      <div className=" my-12 grid grid-cols-1 md:grid-cols-3 gap-2 px-8 place-items-center">
+      <div className=" my-12 grid grid-cols-1 md:grid-cols-3 gap-4 px-8 place-items-center">
         <StackItem />
         <StackItem />
         <StackItem />
