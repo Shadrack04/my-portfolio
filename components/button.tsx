@@ -3,7 +3,7 @@ import React, { ReactNode } from "react";
 
 type ButtonType = {
   children: ReactNode;
-  type: "primary" | "secondary";
+  type?: "primary" | "secondary";
 };
 
 export default function Button({ children, type = "primary" }: ButtonType) {

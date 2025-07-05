@@ -10,7 +10,7 @@ export default function Contact() {
           Get in Touch
         </h2>
       </div>
-      <div className=" grid grid-cols-2 ">
+      <div className="costume-padding grid grid-cols-2 ">
         <Info />
         <ContactForm />
       </div>
