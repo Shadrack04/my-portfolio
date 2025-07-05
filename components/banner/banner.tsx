@@ -12,8 +12,8 @@ export default async function Banner() {
   return (
     <div className=" costume-padding bg-[#fcffee] pb-28 border-b-2 border-primary-color/50">
       {/* <MyName /> */}
-      <div className=" flex gap-6 justify-center items-center">
-        <div className="w-[50%]">
+      <div className=" flex flex-col md:flex-row gap-6 justify-center items-center">
+        <div className="md:w-[50%]">
           <Typewriter />
           <div className=" my-8 ">
             <p className=" text-content-text w-[90%] text-lg/relaxed mb-8">
