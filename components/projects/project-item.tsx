@@ -44,7 +44,7 @@ export default function ProjectItem() {
             </p>
           </div>
         </CardContent>
-        <CardFooter className=" mt-2 flex gap-4">
+        <CardFooter className=" mt-2 flex gap-4 justify-end">
           <Button className=" px-4 py-2 rounded-md text-md font-bold bg-primary-button text-white">
             Preview
           </Button>
