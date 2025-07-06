@@ -31,7 +31,7 @@
 }
 
 .costume-padding {
-  @apply px-16;
+  @apply md:px-16 px-4;
 }
 
 @media (prefers-color-scheme: dark) {
