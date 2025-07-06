@@ -12,7 +12,7 @@ export default function Projects() {
           Here are some of the projects I’ve worked on recently.
         </p>
       </div>
-      <div className=" my-12 grid grid-cols-2 gap-y-8 px-6 place-items-center">
+      <div className=" my-12 grid grid-cols-1 md:grid-cols-2 gap-y-8 px-6 place-items-center">
         <ProjectItem />
         <ProjectItem />
         <ProjectItem />

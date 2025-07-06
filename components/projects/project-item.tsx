@@ -9,7 +9,7 @@ import { FaGithub } from "react-icons/fa6";
 
 export default function ProjectItem() {
   return (
-    <Card className=" w-md">
+    <Card className=" md:w-md">
       <div className="">
         <CardHeader>
           <div className=" w-full relative aspect-3/2 ">
