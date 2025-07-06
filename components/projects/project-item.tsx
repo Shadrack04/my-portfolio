@@ -25,16 +25,16 @@ export default function ProjectItem() {
           <div className="px-2">
             <p className=" text-xl font-bold mb-2">KDN plus</p>
             <div className=" flex items-center gap-2 my-1 flex-wrap">
-              <div className=" card-shadow px-2 bg-background flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
-                <FaReact className=" text-primary-color" />
+              <div className=" card-shadow group px-2 bg-background flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
+                <FaReact className=" text-primary-color group-hover:text-white" />
                 <p className="  font-medium">ReactJs</p>
               </div>
-              <div className=" card-shadow px-2 bg-background flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
-                <FaReact className=" text-primary-color" />
+              <div className=" card-shadow group px-2 bg-background flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
+                <FaReact className=" text-primary-color group-hover:text-white" />
                 <p className="  font-medium">ReactJs</p>
               </div>
-              <div className=" card-shadow px-2 bg-background flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
-                <FaReact className=" text-primary-color" />
+              <div className=" card-shadow group px-2 bg-background flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
+                <FaReact className=" text-primary-color group-hover:text-white" />
                 <p className="  font-medium">ReactJs</p>
               </div>
             </div>
