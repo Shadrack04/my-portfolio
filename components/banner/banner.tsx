@@ -8,7 +8,7 @@ import { images } from "@/constants/images";
 import Button from "../button";
 
 export default function Banner() {
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: ["FRONTEND DEVELOPER", "WEB DEVELOPER"],
     loop: true,
     delaySpeed: 2000,
