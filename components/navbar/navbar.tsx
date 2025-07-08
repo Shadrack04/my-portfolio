@@ -4,8 +4,10 @@ import React from "react";
 export default function Navbar() {
   return (
     <nav className=" flex items-center justify-center z-90">
+
       <ul className="nav-shadow flex bg-foreground z-99 items-center text-[90%] justify-center fixed bottom-6 gap-6 px-4 py-3 rounded-full">
         <li className=" hover:text-primary-button  transition-all duration-400 cursor-pointer hover:font-bold flex items-center gap-1">
+
           <Home className=" size-4" />
           Home
         </li>

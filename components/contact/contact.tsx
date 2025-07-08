@@ -14,7 +14,7 @@ export default function Contact() {
           </div>
         </h2>
       </div>
-      <div className="costume-padding grid grid-cols-2 ">
+      <div className="costume-padding flex flex-col-reverse gap-8 md:gap-0 md:grid md:grid-cols-2 ">
         <Info />
         <ContactForm />
       </div>

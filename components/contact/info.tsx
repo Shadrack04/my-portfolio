@@ -5,7 +5,9 @@ export default function Info() {
   return (
     <div>
       <div className=" flex flex-col mb-4">
+
         <h2 className=" text-2xl font-bold text-primary-text mb-4">Contact</h2>
+
 
         <p className=" text-content-text text-lg/relaxed">
           Reach out for collaboration
