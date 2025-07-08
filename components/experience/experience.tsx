@@ -64,9 +64,11 @@ const items = [
 export default function Experience() {
   return (
     <div className=" bg-foreground">
-      <div className=" flex flex-col md:items-center mb-4">
-        <h2 className=" text-3xl font-bold text-primary-text mb-4 md:mb-8 underline underline-offset-10 decoration-primary-color">
-          My Experience
+
+      <div className=" flex flex-col items-center mb-4">
+        <h2 className=" text-3xl font-bold text-primary-text mb-4">
+          My Work Experience
+
         </h2>
 
         <p className=" text-content-text text-lg/relaxed">

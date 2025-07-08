@@ -3,9 +3,11 @@ import StackItem from "./stack-item";
 
 export default function Stack() {
   return (
-    <div className="md:px-16 my-12">
-      <div className=" flex flex-col md:items-center mb-4">
-        <h2 className=" text-3xl font-bold text-primary-text mb-8 underline underline-offset-10 decoration-primary-color">
+
+    <div className="costume-padding my-12">
+      <div className=" flex flex-col items-center mb-4">
+        <h2 className=" text-3xl font-bold text-primary-text mb-8 ">
+
           My Tech Stack
         </h2>
 
