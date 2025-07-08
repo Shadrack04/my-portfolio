@@ -30,6 +30,8 @@ export default async function Banner() {
 
         <Image
           src={images.heroImage}
+          width={346}
+          height={380}
           alt="The developer's cartoon image"
           className=" shadow-xs ring-4 ring-primary-color bg-amber-100 hover:skew-x-3 transition duration-300 hover:scale-105 rounded-2xl "
         />
