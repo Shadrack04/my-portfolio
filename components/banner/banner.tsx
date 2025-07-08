@@ -10,10 +10,10 @@ import { urlFor } from "@/sanity/lib/image";
 
 export default async function Banner() {
   return (
-    <div className=" costume-padding bg-[#fcffee] pb-28 border-b-2 border-primary-color/50">
+    <div className=" costume-padding bg-[#fcffee] pb-10 md:pb-28 border-b-2 border-primary-color/50">
       {/* <MyName /> */}
-      <div className=" flex gap-6 justify-center items-center">
-        <div className="w-[50%]">
+      <div className=" flex flex-col md:flex-row gap-6 justify-center items-center">
+        <div className="md:w-[50%]">
           <Typewriter />
           <div className=" my-8 ">
             <p className=" text-content-text w-[90%] text-lg/relaxed mb-8">
@@ -21,7 +21,7 @@ export default async function Banner() {
               Tailwind. Passionate about clean code, intuitive UX, and
               performance. Let's build something great together.
             </p>
-            <div className=" flex items-center gap-4">
+            <div className="hidden md:flex items-center gap-4">
               <Button type="primary">Let's Connect</Button>
               <Button type="secondary">Resume</Button>
             </div>
@@ -33,6 +33,10 @@ export default async function Banner() {
           alt="The developer's cartoon image"
           className=" shadow-xs ring-4 ring-primary-color bg-amber-100 hover:skew-x-3 transition duration-300 hover:scale-105 rounded-2xl "
         />
+        <div className=" md:hidden flex flex-col gap-4">
+          <Button type="primary">Let's Connect</Button>
+          <Button type="secondary">Resume</Button>
+        </div>
       </div>
     </div>
   );
