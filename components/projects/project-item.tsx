@@ -18,7 +18,7 @@ export default function ProjectItem({ index }: ProjectItemProps) {
       <Image
         src={images.kdn_hero_image}
         alt="Kdn mockup image"
-        className=" flex-1 w-full"
+        className=" flex-1 w-full hover:scale-105 duration-300"
       />
       <div className="px-2 flex-1 flex flex-col justify-between">
         <div className="">
