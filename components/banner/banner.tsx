@@ -38,7 +38,12 @@ export default function Banner() {
           </div>
         </div>
         <div className="">
-          <Image src={images.heroImage} alt="The developer's cartoon image" />
+          <Image
+            src={images.heroImage}
+            alt="The developer's cartoon image"
+            width={346}
+            height={380}
+          />
         </div>
       </div>
     </div>
