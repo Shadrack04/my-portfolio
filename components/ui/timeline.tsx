@@ -2,7 +2,7 @@
 
 import * as React from "react";
 // import { Slot } from "radix-ui";
-import { Slot } from "@radix-ui/react-slot";
+// import { Slot } from "@radix-ui/react-slot";
 
 import { cn } from "@/lib/utils";
 
@@ -92,7 +92,7 @@ interface TimelineDateProps extends React.HTMLAttributes<HTMLTimeElement> {
 }
 
 function TimelineDate({
-  asChild = false,
+  // asChild = false,
   className,
   ...props
 }: TimelineDateProps) {
