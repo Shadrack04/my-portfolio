@@ -1,7 +1,7 @@
 import React from "react";
 
 import Stack from "../stack/stack";
-import Projects from "../projects/projects";
+
 import Experience from "../experience/experience";
 
 export default function About() {
