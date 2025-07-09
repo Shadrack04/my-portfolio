@@ -32,15 +32,12 @@ export default function ContactForm() {
     console.log("submit");
     console.log(data);
   };
-  const handleInvalid = (errors: any) => {
-    console.log("Validation errors", errors);
-  };
 
   return (
     <Card className="card-shadow w-full max-w-sm">
       <CardContent>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(handleSubmit, handleInvalid)}>
+          <form onSubmit={form.handleSubmit(handleSubmit)}>
             <div className="my-4 flex flex-col gap-6">
               <div className=" flex items-center gap-4">
                 <FormField
