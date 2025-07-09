@@ -11,9 +11,11 @@ type ProjectItemProps = {
 };
 
 export default function ProjectItem({ index }: ProjectItemProps) {
-  const alignment = index % 2 !== 0 ? "flex-row-reverse" : "";
+  const alignment = index % 2 !== 0 ? "md:flex-row-reverse" : "";
   return (
-    <div className={`${alignment} flex justify-center gap-4 `}>
+    <div
+      className={`${alignment} flex justify-center gap-4 flex-col md:flex-row`}
+    >
       <Image
         src={images.kdn_hero_image}
         alt="Kdn mockup image"

@@ -19,10 +19,10 @@ export default async function Banner() {
             <p className=" text-content-text w-[90%] text-lg/relaxed mb-8">
               I craft responsive, modern web interfaces using React and
               Tailwind. Passionate about clean code, intuitive UX, and
-              performance. Let&apos:s build something great together.
+              performance. Let&apos;s build something great together.
             </p>
             <div className="hidden md:flex items-center gap-4">
-              <Button type="primary">Let&apos:s Connect</Button>
+              <Button type="primary">Let&apos;s Connect</Button>
               <Button type="secondary">Resume</Button>
             </div>
           </div>
@@ -36,7 +36,7 @@ export default async function Banner() {
           className=" shadow-xs ring-4 ring-primary-color bg-amber-100 hover:skew-x-3 transition duration-300 hover:scale-105 rounded-2xl "
         />
         <div className=" md:hidden flex flex-col gap-4">
-          <Button type="primary">Let&apos:s Connect</Button>
+          <Button type="primary">Let&apos;s Connect</Button>
           <Button type="secondary">Resume</Button>
         </div>
       </div>
