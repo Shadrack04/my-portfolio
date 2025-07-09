@@ -3,7 +3,6 @@ import Image from "next/image";
 import React from "react";
 import { FaReact } from "react-icons/fa";
 
-import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
 import { Button } from "../ui/button";
 import { FaGithub } from "react-icons/fa6";
 
@@ -14,7 +13,6 @@ type ProjectItemProps = {
 export default function ProjectItem({ index }: ProjectItemProps) {
   const alignment = index % 2 !== 0 ? "flex-row-reverse" : "";
   return (
-
     <div className={`${alignment} flex justify-center gap-4 `}>
       <Image
         src={images.kdn_hero_image}
