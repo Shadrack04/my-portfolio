@@ -3,11 +3,9 @@ import StackItem from "./stack-item";
 
 export default function Stack() {
   return (
-
     <div className="costume-padding my-12">
       <div className=" flex flex-col items-center mb-4">
         <h2 className=" text-3xl font-bold text-primary-text mb-8 ">
-
           My Tech Stack
         </h2>
 
@@ -15,7 +13,7 @@ export default function Stack() {
           These are some of the tools i use to create aesthetic magic
         </p>
       </div>
-      <div className=" my-12 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 md:px-8 place-items-center">
+      <div className=" my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4 md:px-8 place-items-center">
         <StackItem />
         <StackItem />
         <StackItem />
