@@ -7,7 +7,7 @@ import Projects from "@/components/projects/projects";
 
 export default function Home() {
   return (
-    <div className="pt-20 md:pt-38 bg-foreground md:px-8">
+    <div className="pt-20 lg:pt-38 bg-foreground md:px-8">
       <div className="costume-padding sticky top-4">{/* <MyName /> */}</div>
       <Banner />
       <About />

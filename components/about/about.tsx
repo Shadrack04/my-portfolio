@@ -13,7 +13,7 @@ export default function About() {
           <div className=" w-40 h-0.5 bg-primary-color ml-4"></div>
           <div className=" w-40 h-0.5 bg-primary-color"></div>
         </div>
-        <p className=" md:w-[48rem] text-content-text text-lg/relaxed">
+        <p className=" lg:w-[48rem] text-content-text text-lg/relaxed">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsam
           suscipit impedit beatae modi quam quibusdam commodi accusamus voluptas
           tempore ipsa mollitia alias quaerat exercitationem deserunt, sit

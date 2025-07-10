@@ -34,7 +34,7 @@ export default function ContactForm() {
   };
 
   return (
-    <Card className="card-shadow w-full md:max-w-sm">
+    <Card className="card-shadow w-full lg:max-w-sm">
       <CardContent>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(handleSubmit)}>
