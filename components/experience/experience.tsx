@@ -63,7 +63,7 @@ const items = [
 
 export default function Experience() {
   return (
-    <div className=" costume-padding bg-foreground">
+    <div className=" lg:px-16 bg-foreground">
       <div className=" flex flex-col items-center mb-4">
         <h2 className=" text-3xl font-bold text-primary-text mb-4">
           My Work Experience
