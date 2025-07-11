@@ -8,12 +8,12 @@ export default function About() {
   return (
     <div className="costume-padding py-8 border-b-2 border-primary-color/50">
       <div className=" flex flex-col items-center mb-8">
-        <h1 className=" text-4xl font-bold">About Me</h1>
+        <h1 className=" text-4xl font-bold text-primary-text">About Me</h1>
         <div className=" flex flex-col gap-0.5 mb-8">
           <div className=" w-40 h-0.5 bg-primary-color ml-4"></div>
           <div className=" w-40 h-0.5 bg-primary-color"></div>
         </div>
-        <p className=" md:w-[48rem] text-content-text text-lg/relaxed">
+        <p className=" lg:w-[48rem] text-content-text text-lg/relaxed">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsam
           suscipit impedit beatae modi quam quibusdam commodi accusamus voluptas
           tempore ipsa mollitia alias quaerat exercitationem deserunt, sit

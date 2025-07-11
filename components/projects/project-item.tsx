@@ -11,17 +11,17 @@ type ProjectItemProps = {
 };
 
 export default function ProjectItem({ index }: ProjectItemProps) {
-  const alignment = index % 2 !== 0 ? "md:flex-row-reverse" : "";
+  const alignment = index % 2 !== 0 ? "lg:flex-row-reverse" : "";
   return (
     <div
-      className={`${alignment} flex justify-center gap-4 flex-col md:flex-row`}
+      className={`${alignment} flex justify-center gap-4 flex-col lg:flex-row`}
     >
       <Image
         src={images.kdn_hero_image}
         alt="Kdn mockup image"
         width={463}
         height={260}
-        className=" flex-1 w-full hover:scale-105 duration-300"
+        className=" flex-1 w-full lg:w-[350px] hover:scale-105 duration-300"
       />
 
       <div className="px-2 flex-1 flex flex-col justify-between">

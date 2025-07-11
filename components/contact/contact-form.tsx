@@ -34,7 +34,7 @@ export default function ContactForm() {
   };
 
   return (
-    <Card className="card-shadow w-full md:max-w-sm">
+    <Card className="card-shadow w-full lg:max-w-sm">
       <CardContent>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(handleSubmit)}>
@@ -45,13 +45,15 @@ export default function ContactForm() {
                   name="firstName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>First Name</FormLabel>
+                      <FormLabel className=" text-primary-text">
+                        First Name
+                      </FormLabel>
                       <FormControl>
                         <Input
                           {...field}
                           placeholder="First name"
                           required
-                          className=" shadow-xs border-1 border-primary-color"
+                          className=" shadow-xs border-1 placeholder:text-content-text border-primary-color"
                         />
                       </FormControl>
                       <FormMessage />
@@ -64,13 +66,15 @@ export default function ContactForm() {
                   name="lastName"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Last Name</FormLabel>
+                      <FormLabel className=" text-primary-text">
+                        Last Name
+                      </FormLabel>
                       <FormControl>
                         <Input
                           {...field}
                           placeholder="Last name"
                           required
-                          className=" shadow-xs border-1 border-primary-color"
+                          className=" shadow-xs border-1 placeholder:text-content-text border-primary-color"
                         />
                       </FormControl>
                       <FormMessage />
@@ -84,13 +88,13 @@ export default function ContactForm() {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel className=" text-primary-text">Email</FormLabel>
                     <FormControl>
                       <Input
                         {...field}
                         placeholder="m@example.com"
                         required
-                        className=" shadow-xs border-1 border-primary-color"
+                        className=" shadow-xs border-1 placeholder:text-content-text border-primary-color"
                       />
                     </FormControl>
                     <FormMessage />
@@ -103,12 +107,14 @@ export default function ContactForm() {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Message</FormLabel>
+                    <FormLabel className=" text-primary-text">
+                      Message
+                    </FormLabel>
                     <FormControl>
                       <Textarea
                         {...field}
                         placeholder="Message"
-                        className=" shadow-xs border-1 border-primary-color"
+                        className=" shadow-xs border-1 placeholder:text-content-text border-primary-color"
                       />
                     </FormControl>
                     <FormMessage />

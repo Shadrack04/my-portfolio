@@ -4,7 +4,9 @@ import Floater from "./floater";
 
 export default function Stack() {
   return (
+
     <div className="costume-padding my-12">
+
       <div className=" flex flex-col items-center mb-4">
         <h2 className=" text-3xl font-bold text-primary-text mb-8 ">
           My Tech Stack
@@ -14,8 +16,10 @@ export default function Stack() {
           These are some of the tools i use to create aesthetic magic
         </p>
       </div>
+
       <div className=" border-1 border-gray-200">
         <Floater />
+
       </div>
     </div>
   );
