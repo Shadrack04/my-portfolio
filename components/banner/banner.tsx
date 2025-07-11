@@ -10,7 +10,7 @@ import Typewriter from "./typewriter";
 
 export default async function Banner() {
   return (
-    <div className=" costume-padding bg-[#fcffee] pb-10 md:pb-28 border-b-2 border-primary-color/50">
+    <div className=" costume-padding pb-10 md:pb-28 border-b-2 border-primary-color/50">
       {/* <MyName /> */}
       <div className=" flex flex-col md:flex-row gap-6 justify-center items-center">
         <div className="lg:w-[50%]">

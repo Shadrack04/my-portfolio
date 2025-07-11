@@ -64,11 +64,9 @@ const items = [
 export default function Experience() {
   return (
     <div className=" bg-foreground">
-
       <div className=" flex flex-col items-center mb-4">
         <h2 className=" text-3xl font-bold text-primary-text mb-4">
           My Work Experience
-
         </h2>
 
         <p className=" text-content-text text-lg/relaxed">
@@ -78,13 +76,13 @@ export default function Experience() {
       <div className=" my-12">
         <Timeline
           defaultValue={3}
-          className=" max-w-[50rem] flex flex-col gap-4 mx-auto"
+          className=" lg:max-w-[55rem] flex flex-col gap-4 "
         >
           {items.map((item) => (
             <TimelineItem
               key={item.id}
               step={item.id}
-              className=" card-shadow rounded-xl mb-4 py-6 pl-2 md:py-6 md:px-6  group-data-[orientation=vertical]/timeline:ms-10"
+              className=" hover:shadow-xl rounded-xl mb-4 py-6 pl-2 md:py-6 md:px-6  group-data-[orientation=vertical]/timeline:ms-10"
             >
               <TimelineHeader>
                 <TimelineSeparator className=" top-0 bottom-0 bg-primary-color group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6.5" />
