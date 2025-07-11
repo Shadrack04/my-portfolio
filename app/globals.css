@@ -2,7 +2,8 @@
 
 :root {
   --background: #d1d8e0;
-  --foreground: #fcffee;
+  /* --foreground: #fcffee; */
+  --foreground: #fff;
   --layout-background: #2a2a2a;
   --primary-text: #2a2a2a;
   --content-text: #676767d7;
@@ -69,3 +70,5 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+/* geist */
