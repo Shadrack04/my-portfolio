@@ -10,7 +10,7 @@ import Typewriter from "./typewriter";
 
 export default async function Banner() {
   return (
-    <div className=" costume-padding pb-10 md:pb-28 border-b-2 border-primary-color/50">
+    <div className=" costume-padding pb-10 md:pb-28">
       {/* <MyName /> */}
       <div className=" flex flex-col md:flex-row gap-6 justify-center items-center">
         <div className="lg:w-[50%]">
@@ -33,7 +33,8 @@ export default async function Banner() {
           width={346}
           height={380}
           alt="The developer's cartoon image"
-          className=" shadow-xs ring-4 ring-primary-color bg-amber-100 hover:skew-x-3 transition duration-300 hover:scale-105 rounded-2xl "
+          className=" shadow-xs ring-4 ring-primary-color bg-amber-100 rounded-2xl "
+          loading="lazy"
         />
         <div className=" md:hidden flex flex-col gap-4">
           <Button type="primary">Let&apos;s Connect</Button>
