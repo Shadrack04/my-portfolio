@@ -82,7 +82,7 @@ export default function Experience() {
             <TimelineItem
               key={item.id}
               step={item.id}
-              className=" hover:shadow-xl rounded-xl mb-4 py-6 pl-2 md:py-6 md:px-6  group-data-[orientation=vertical]/timeline:ms-10"
+              className=" hover:shadow-sm rounded-xl mb-4 py-6 pl-2 md:py-6 md:px-6  group-data-[orientation=vertical]/timeline:ms-10"
             >
               <TimelineHeader>
                 <TimelineSeparator
@@ -97,9 +97,11 @@ export default function Experience() {
                     {item.title}
                   </p>
                 </TimelineTitle>
-                <TimelineIndicator className="group-data-completed/timeline-item:bg-primary-color group-data-completed/timeline-item:text-primary-foreground flex size-6 items-center justify-center group-data-completed/timeline-item:border-none group-data-[orientation=vertical]/timeline:-left-7">
+                <TimelineIndicator
+                  className={`${index == 0 ? "" : ""} group-data-completed/timeline-item:bg-primary-color group-data-completed/timeline-item:text-primary-foreground flex size-6 items-center justify-center group-data-completed/timeline-item:border-none group-data-[orientation=vertical]/timeline:-left-7`}
+                >
                   <CheckIcon
-                    className="group-not-data-completed/timeline-item:hidden"
+                    className="group-not-data-completed/timeline-item:hidden text-white"
                     size={16}
                   />
                 </TimelineIndicator>

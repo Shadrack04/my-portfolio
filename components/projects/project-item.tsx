@@ -21,10 +21,10 @@ export default function ProjectItem({ index }: ProjectItemProps) {
         alt="Kdn mockup image"
         width={463}
         height={260}
-        className=" flex-1 w-full lg:w-[350px] hover:scale-105 duration-300"
+        className=" flex-1 w-full lg:w-[350px] hover:scale-105 duration-300 rounded-md"
       />
 
-      <div className="px-2 flex-1 flex flex-col justify-between">
+      <div className="px-2 flex-1 flex flex-col">
         <div className="">
           <p className=" text-2xl font-bold text-special-text">KDN plus</p>
           <p className=" text-content-text text-lg">
@@ -32,16 +32,16 @@ export default function ProjectItem({ index }: ProjectItemProps) {
             anywhere- your ultimate home for cinematic entertainment.
           </p>
           <div className=" flex items-center gap-2 my-4 flex-wrap">
-            <div className=" card-shadow px-2 bg-background flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
-              <FaReact className=" text-primary-color" />
+            <div className=" card-shadow px-2 group flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
+              <FaReact className=" group-hover:text-white text-primary-color" />
               <p className="  font-medium">ReactJs</p>
             </div>
-            <div className=" card-shadow px-2 bg-background flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
-              <FaReact className=" text-primary-color" />
+            <div className=" card-shadow px-2 group flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
+              <FaReact className=" group-hover:text-white text-primary-color" />
               <p className="  font-medium">ReactJs</p>
             </div>
-            <div className=" card-shadow px-2 bg-background flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
-              <FaReact className=" text-primary-color" />
+            <div className=" card-shadow px-2 group flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
+              <FaReact className=" group-hover:text-white text-primary-color" />
               <p className="  font-medium">ReactJs</p>
             </div>
           </div>
