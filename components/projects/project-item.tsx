@@ -31,7 +31,7 @@ export default function ProjectItem({ index }: ProjectItemProps) {
             Stream your favorite, hot and new Nollywood movies anytime,
             anywhere- your ultimate home for cinematic entertainment.
           </p>
-          <div className=" flex items-center gap-2 my-4 flex-wrap">
+          <div className=" flex items-center gap-2 my-4 flex-wrap bg-amber-400">
             <div className=" card-shadow px-2 bg-background flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
               <FaReact className=" text-primary-color" />
               <p className="  font-medium">ReactJs</p>

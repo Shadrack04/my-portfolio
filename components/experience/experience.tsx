@@ -78,14 +78,16 @@ export default function Experience() {
           defaultValue={3}
           className=" lg:max-w-[55rem] flex flex-col gap-4 "
         >
-          {items.map((item) => (
+          {items.map((item, index) => (
             <TimelineItem
               key={item.id}
               step={item.id}
               className=" hover:shadow-xl rounded-xl mb-4 py-6 pl-2 md:py-6 md:px-6  group-data-[orientation=vertical]/timeline:ms-10"
             >
               <TimelineHeader>
-                <TimelineSeparator className=" top-0 bottom-0 bg-primary-color group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6.5" />
+                <TimelineSeparator
+                  className={`${index == 0 ? " bg-gray-600" : "bg-primary-color"} top-0 bottom-0  group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6.5`}
+                />
                 <TimelineDate className=" text-special-text text-xl mb-4">
                   {item.date}
                 </TimelineDate>
