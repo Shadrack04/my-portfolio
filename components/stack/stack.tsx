@@ -5,7 +5,7 @@ export default function Stack() {
   return (
     <div className="costume-padding my-12">
       <div className=" flex flex-col items-center mb-4">
-        <h2 className=" text-3xl font-bold text-primary-text mb-8 ">
+        <h2 className=" text-3xl font-bold text-primary-text mb-4 ">
           My Tech Stack
         </h2>
 
@@ -14,7 +14,7 @@ export default function Stack() {
         </p>
       </div>
 
-      <div className=" border-1 border-gray-200">
+      <div className=" lg:w-[75%] mx-auto">
         <Floater />
       </div>
     </div>

@@ -7,12 +7,12 @@ export default function StackItem() {
     <div className=" card-shadow p-4 flex items-center justify-center flex-col rounded-full">
       <Image
         src={svg.tailwindIcon}
-        width={50}
-        height={50}
+        width={80}
+        height={80}
         alt="language icon"
         className=" aspect-square"
       />
-      <p className=" text-primary-text font-bold text-xs">Tailwindcss</p>
+      {/* <p className=" text-primary-text font-bold text-xs">Tailwindcss</p> */}
     </div>
   );
 }
