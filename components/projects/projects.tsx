@@ -3,7 +3,7 @@ import ProjectItem from "./project-item";
 
 export default function Projects() {
   return (
-    <div className="costume-padding py-8 border-b-2 border-primary-color/50">
+    <div className="costume-padding py-8">
       <div className=" flex flex-col items-center mb-4">
         <h2 className=" text-4xl font-bold text-primary-text mb-4 pb-2">
           My Projects
