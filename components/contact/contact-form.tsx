@@ -53,7 +53,7 @@ export default function ContactForm() {
                           {...field}
                           placeholder="First name"
                           required
-                          className=" shadow-xs border-1 placeholder:text-content-text border-primary-color"
+                          className=" shadow-xs border-1 border-gray-400 placeholder:text-content-text focus:border-primary-color"
                         />
                       </FormControl>
                       <FormMessage className="text-secondary-color text-xs" />
@@ -74,7 +74,7 @@ export default function ContactForm() {
                           {...field}
                           placeholder="Last name"
                           required
-                          className=" shadow-xs border-1 placeholder:text-content-text border-primary-color"
+                          className=" shadow-xs border-1 border-gray-400 placeholder:text-content-text focus:border-primary-color"
                         />
                       </FormControl>
                       <FormMessage className="text-secondary-color text-xs" />
@@ -94,7 +94,7 @@ export default function ContactForm() {
                         {...field}
                         placeholder="m@example.com"
                         required
-                        className=" shadow-xs border-1 placeholder:text-content-text border-primary-color"
+                        className=" shadow-xs border-1 border-gray-400 placeholder:text-content-text focus:border-primary-color"
                       />
                     </FormControl>
                     <FormMessage className="text-secondary-color text-xs" />
@@ -114,7 +114,7 @@ export default function ContactForm() {
                       <Textarea
                         {...field}
                         placeholder="Message"
-                        className=" shadow-xs border-1 placeholder:text-content-text border-primary-color"
+                        className=" shadow-xs border-1 border-gray-400 placeholder:text-content-text focus:border-primary-color"
                       />
                     </FormControl>
                     <FormMessage className="text-secondary-color text-xs" />
