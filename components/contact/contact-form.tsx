@@ -56,7 +56,7 @@ export default function ContactForm() {
                           className=" shadow-xs border-1 placeholder:text-content-text border-primary-color"
                         />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-secondary-color text-xs" />
                     </FormItem>
                   )}
                 />
@@ -77,7 +77,7 @@ export default function ContactForm() {
                           className=" shadow-xs border-1 placeholder:text-content-text border-primary-color"
                         />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-secondary-color text-xs" />
                     </FormItem>
                   )}
                 />
@@ -97,7 +97,7 @@ export default function ContactForm() {
                         className=" shadow-xs border-1 placeholder:text-content-text border-primary-color"
                       />
                     </FormControl>
-                    <FormMessage />
+                    <FormMessage className="text-secondary-color text-xs" />
                   </FormItem>
                 )}
               />
@@ -117,14 +117,14 @@ export default function ContactForm() {
                         className=" shadow-xs border-1 placeholder:text-content-text border-primary-color"
                       />
                     </FormControl>
-                    <FormMessage />
+                    <FormMessage className="text-secondary-color text-xs" />
                   </FormItem>
                 )}
               />
             </div>
             <Button
               type="submit"
-              className="w-full bg-primary-color text-white text-xl"
+              className="w-full bg-primary-color hover:bg-hover-color text-white text-xl"
             >
               Send
             </Button>

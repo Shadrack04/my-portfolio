@@ -11,7 +11,7 @@
   --primary-button: #20bf6b;
   --primary-color: #20bf6b;
   --special-text: #20bf6b;
-  --secondary-button: #ef4444;
+  --secondary-color: #ef4444;
 }
 
 @theme inline {
@@ -24,7 +24,7 @@
   --color-content-text: var(--content-text);
   --color-special-text: var(--special-text);
   --color-primary-button: var(--primary-button);
-  --color-secondary-button: var(--secondary-button);
+  --color-secondary-color: var(--secondary-color);
   --color-hover-color: var(--hover-color);
 
   --font-sans: var(--font-geist-sans);
