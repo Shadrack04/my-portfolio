@@ -124,7 +124,7 @@ export default function ContactForm() {
             </div>
             <Button
               type="submit"
-              className="w-full bg-primary-color hover:bg-hover-color text-white text-xl"
+              className="w-full cursor-pointer bg-primary-color hover:bg-hover-color text-white text-xl"
             >
               Send
             </Button>
