@@ -39,12 +39,12 @@ export default function ContactForm() {
         <Form {...form}>
           <form onSubmit={form.handleSubmit(handleSubmit)}>
             <div className="my-4 flex flex-col gap-6">
-              <div className=" flex items-center gap-4">
+              <div className=" flex items-start gap-4">
                 <FormField
                   control={form.control}
                   name="firstName"
                   render={({ field }) => (
-                    <FormItem>
+                    <FormItem className=" flex-1">
                       <FormLabel className=" text-primary-text">
                         First Name
                       </FormLabel>
@@ -65,7 +65,7 @@ export default function ContactForm() {
                   control={form.control}
                   name="lastName"
                   render={({ field }) => (
-                    <FormItem>
+                    <FormItem className=" flex-1">
                       <FormLabel className=" text-primary-text">
                         Last Name
                       </FormLabel>
