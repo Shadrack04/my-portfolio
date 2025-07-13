@@ -16,10 +16,9 @@ export default function About() {
         </div>
         <AnimationWrapper
           initial={{ opacity: 0, y: 40 }}
-          // animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.8 }}
         >
           <p className=" lg:w-[48rem] text-content-text text-lg/relaxed">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsam

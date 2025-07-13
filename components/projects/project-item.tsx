@@ -5,6 +5,8 @@ import { FaReact } from "react-icons/fa";
 
 import { Button } from "../ui/button";
 import { FaGithub } from "react-icons/fa6";
+import AnimationWrapper from "../animation/animation-wrapper";
+import { animate } from "framer-motion";
 
 type ProjectItemProps = {
   index: number;
@@ -16,13 +18,15 @@ export default function ProjectItem({ index }: ProjectItemProps) {
     <div
       className={`${alignment} flex justify-center gap-4 flex-col lg:flex-row`}
     >
-      <Image
-        src={images.kdn_hero_image}
-        alt="Kdn mockup image"
-        width={463}
-        height={260}
-        className=" flex-1 w-full lg:w-[350px] hover:scale-102 transition-all duration-300 rounded-md"
-      />
+      <AnimationWrapper className=" flex-1 w-full lg:w-[350px] hover:scale-102 transition-all duration-300 rounded-md">
+        <Image
+          src={images.kdn_hero_image}
+          alt="Kdn mockup image"
+          width={463}
+          height={260}
+          className=" object-cover hover:scale-102 transition-all duration-300 rounded-md"
+        />
+      </AnimationWrapper>
 
       <div className="px-2 flex-1 flex flex-col">
         <div className="">

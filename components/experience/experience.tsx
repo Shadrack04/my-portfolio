@@ -10,6 +10,22 @@ import {
   TimelineSeparator,
   TimelineTitle,
 } from "@/components/ui/timeline";
+import AnimationWrapper from "../animation/animation-wrapper";
+
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.2, // Delay between children
+      delayChildren: 0.1, // Optional delay before starting
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0 },
+};
 
 const items = [
   {
@@ -107,16 +123,26 @@ export default function Experience() {
                 </TimelineIndicator>
               </TimelineHeader>
               <TimelineContent className="">
-                <ul className=" flex flex-col gap-1 p-4">
+                <AnimationWrapper
+                  as="ul"
+                  className=" flex flex-col gap-1 p-4"
+                  variants={containerVariants}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, amount: 0.3 }}
+                >
                   {item.description?.map((task, index) => (
-                    <li
-                      className=" list-disc text-content-text text-lg/relaxed"
+                    <AnimationWrapper
+                      as="li"
+                      whileInView={{ opacity: 1, y: 0 }}
                       key={index}
+                      variants={itemVariants}
+                      className=" list-disc text-content-text text-lg/relaxed"
                     >
                       {task}
-                    </li>
+                    </AnimationWrapper>
                   ))}
-                </ul>
+                </AnimationWrapper>
               </TimelineContent>
             </TimelineItem>
           ))}
