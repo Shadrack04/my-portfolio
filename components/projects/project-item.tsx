@@ -5,7 +5,7 @@ import { FaReact } from "react-icons/fa";
 
 import { Button } from "../ui/button";
 import { FaGithub } from "react-icons/fa6";
-import AnimationWrapper from "../animation/animation-wrapper";
+// import AnimationWrapper from "../animation/animation-wrapper";
 
 type ProjectItemProps = {
   index: number;
