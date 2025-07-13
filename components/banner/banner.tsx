@@ -5,6 +5,7 @@ import Image from "next/image";
 import { images } from "@/constants/images";
 import Button from "../button";
 import Typewriter from "./typewriter";
+import AnimationWrapper from "../animation/animation-wrapper";
 // import { getBanner } from "@/sanity/sanity-utils";
 // import { urlFor } from "@/sanity/lib/image";
 
@@ -21,25 +22,42 @@ export default async function Banner() {
               Tailwind. Passionate about clean code, intuitive UX, and
               performance. Let&apos;s build something great together.
             </p>
-            <div className="hidden md:flex items-center gap-4">
+            <AnimationWrapper
+              className="hidden md:flex items-center gap-4"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+            >
               <Button type="primary">Let&apos;s Connect</Button>
               <Button type="secondary">Resume</Button>
-            </div>
+            </AnimationWrapper>
           </div>
         </div>
 
-        <Image
-          src={images.heroImage}
-          width={346}
-          height={380}
-          alt="The developer's cartoon image"
-          className=" shadow-xs ring-4 ring-primary-color bg-amber-100 rounded-2xl "
-          loading="lazy"
-        />
-        <div className=" md:hidden flex flex-col gap-4">
+        <AnimationWrapper
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.4 }}
+        >
+          <Image
+            src={images.heroImage}
+            width={346}
+            height={380}
+            alt="The developer's cartoon image"
+            className=" shadow-xs ring-4 ring-primary-color bg-amber-100 rounded-2xl "
+            loading="lazy"
+          />
+        </AnimationWrapper>
+
+        <AnimationWrapper
+          className=" md:hidden flex flex-col gap-4"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.2 }}
+        >
           <Button type="primary">Let&apos;s Connect</Button>
           <Button type="secondary">Resume</Button>
-        </div>
+        </AnimationWrapper>
       </div>
     </div>
   );
