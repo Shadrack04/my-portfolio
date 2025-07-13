@@ -9,7 +9,7 @@ interface AnimationWrapperProps extends MotionProps {
   // as?: keyof JSX.IntrinsicElements;
   as?: ElementType;
   className?: string;
-  [key: string]: any;
+  // [key: string]: any;
 }
 
 export default function AnimationWrapper({
