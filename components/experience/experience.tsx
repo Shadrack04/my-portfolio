@@ -94,7 +94,7 @@ export default function Experience() {
           defaultValue={3}
           className=" lg:max-w-[55rem] flex flex-col gap-4 "
         >
-          {items.map((item, index) => (
+          {items.map((item) => (
             <TimelineItem
               key={item.id}
               step={item.id}
