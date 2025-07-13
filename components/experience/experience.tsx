@@ -102,7 +102,8 @@ export default function Experience() {
             >
               <TimelineHeader>
                 <TimelineSeparator
-                  className={`${index == 0 ? " bg-gray-600" : "bg-primary-color"} top-0 bottom-0  group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6.5`}
+                  // className={`${index == 0 ? " bg-gray-600" : "bg-primary-color"} top-0 bottom-0  group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6.5`}
+                  className=" top-0 bottom-0 bg-primary-color group-data-[orientation=vertical]/timeline:-left-7 group-data-[orientation=vertical]/timeline:h-[calc(100%-1.5rem-0.25rem)] group-data-[orientation=vertical]/timeline:translate-y-6.5"
                 />
                 <TimelineDate className=" text-special-text text-xl mb-4">
                   {item.date}
@@ -114,7 +115,8 @@ export default function Experience() {
                   </p>
                 </TimelineTitle>
                 <TimelineIndicator
-                  className={`${index == 0 ? "" : ""} group-data-completed/timeline-item:bg-primary-color group-data-completed/timeline-item:text-primary-foreground flex size-6 items-center justify-center group-data-completed/timeline-item:border-none group-data-[orientation=vertical]/timeline:-left-7`}
+                  // className={`${index == 0 ? "" : ""} group-data-completed/timeline-item:bg-primary-color group-data-completed/timeline-item:text-primary-foreground flex size-6 items-center justify-center group-data-completed/timeline-item:border-none group-data-[orientation=vertical]/timeline:-left-7`}
+                  className="group-data-completed/timeline-item:bg-primary-color group-data-completed/timeline-item:text-primary-foreground flex size-6 items-center justify-center group-data-completed/timeline-item:border-none group-data-[orientation=vertical]/timeline:-left-7"
                 >
                   <CheckIcon
                     className="group-not-data-completed/timeline-item:hidden text-white"
