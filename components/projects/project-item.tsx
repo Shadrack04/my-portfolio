@@ -17,15 +17,15 @@ export default function ProjectItem({ index }: ProjectItemProps) {
     <div
       className={`${alignment} flex justify-center gap-4 flex-col lg:flex-row`}
     >
-      <AnimationWrapper className=" flex-1 w-full lg:w-[350px] hover:scale-102 transition-all duration-300 rounded-md">
-        <Image
-          src={images.kdn_hero_image}
-          alt="Kdn mockup image"
-          width={463}
-          height={260}
-          className=" object-cover hover:scale-102 transition-all duration-300 rounded-md"
-        />
-      </AnimationWrapper>
+      {/* <AnimationWrapper className=" flex-1 w-full lg:w-[350px] hover:scale-102 transition-all duration-300 rounded-md"> */}
+      <Image
+        src={images.kdn_hero_image}
+        alt="Kdn mockup image"
+        width={450}
+        height={260}
+        className=" flex-1 w-full object-cover lg:w-[350px] hover:scale-102 transition-all duration-300 rounded-md"
+      />
+      {/* </AnimationWrapper> */}
 
       <div className="px-2 flex-1 flex flex-col">
         <div className="">

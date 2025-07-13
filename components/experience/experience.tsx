@@ -81,7 +81,7 @@ export default function Experience() {
   return (
     <div className=" lg:px-16 bg-foreground">
       <div className=" flex flex-col items-center mb-4">
-        <h2 className=" text-3xl font-bold text-primary-text mb-4">
+        <h2 className=" text-2xl font-bold text-primary-text mb-2">
           My Work Experience
         </h2>
 
@@ -90,15 +90,12 @@ export default function Experience() {
         </p>
       </div>
       <div className=" my-12">
-        <Timeline
-          defaultValue={3}
-          className=" lg:max-w-[55rem] flex flex-col gap-4 "
-        >
+        <Timeline defaultValue={3} className=" lg:max-w-[55rem] flex flex-col ">
           {items.map((item) => (
             <TimelineItem
               key={item.id}
               step={item.id}
-              className=" hover:shadow-sm rounded-xl mb-4 py-6 pl-2 md:py-6 md:px-6  group-data-[orientation=vertical]/timeline:ms-10"
+              className=" hover:shadow-sm rounded-xl py-6 pl-2 md:py-6 md:px-6  group-data-[orientation=vertical]/timeline:ms-10"
             >
               <TimelineHeader>
                 <TimelineSeparator
@@ -118,10 +115,7 @@ export default function Experience() {
                   // className={`${index == 0 ? "" : ""} group-data-completed/timeline-item:bg-primary-color group-data-completed/timeline-item:text-primary-foreground flex size-6 items-center justify-center group-data-completed/timeline-item:border-none group-data-[orientation=vertical]/timeline:-left-7`}
                   className="group-data-completed/timeline-item:bg-primary-color group-data-completed/timeline-item:text-primary-foreground flex size-6 items-center justify-center group-data-completed/timeline-item:border-none group-data-[orientation=vertical]/timeline:-left-7"
                 >
-                  <CheckIcon
-                    className="group-not-data-completed/timeline-item:hidden text-white"
-                    size={16}
-                  />
+                  <CheckIcon className=" text-white" size={16} />
                 </TimelineIndicator>
               </TimelineHeader>
               <TimelineContent className="">
