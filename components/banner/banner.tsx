@@ -51,9 +51,9 @@ export default async function Banner() {
 
         <AnimationWrapper
           className=" md:hidden flex flex-col gap-4"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.2 }}
+          initial={{ opacity: 0, y: 80 }}
+          transition={{ duration: 0.6 }}
+          whileInView={{ opacity: 1, y: 0 }}
         >
           <Button type="primary">Let&apos;s Connect</Button>
           <Button type="secondary">Resume</Button>
