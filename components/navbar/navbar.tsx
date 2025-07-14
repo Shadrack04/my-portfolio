@@ -1,25 +1,34 @@
 import { Database, Home, Send, UserRound } from "lucide-react";
+
 import React from "react";
 
 export default function Navbar() {
   return (
     <nav className=" flex items-center justify-center z-90">
       <ul className="nav-shadow flex bg-foreground z-99 items-center text-[90%] justify-center fixed bottom-6 gap-4 md:gap-6 px-4 py-3 rounded-full">
-        <li className=" hover:text-primary-button text-primary-text transition-all duration-400 cursor-pointer hover:font-bold flex items-center gap-1">
-          <Home className=" size-4" />
-          Home
+        <li className=" hover:text-primary-button text-primary-text transition-all duration-400 cursor-pointer hover:font-bold">
+          <a href="/" className="flex items-center gap-1">
+            <Home className=" size-4" />
+            Home
+          </a>
         </li>
         <li className="hover:text-primary-button transition-all text-primary-text duration-400 cursor-pointer hover:font-bold flex items-center gap-1">
-          <UserRound className=" size-4" />
-          About
+          <a href="/about" className="flex items-center gap-1">
+            <UserRound className=" size-4" />
+            About
+          </a>
         </li>
         <li className="hover:text-primary-button transition-all text-primary-text duration-400 cursor-pointer hover:font-bold flex items-center gap-1">
-          <Database className=" size-4" />
-          Project
+          <a href="/projects" className="flex items-center gap-1">
+            <Database className=" size-4" />
+            Project
+          </a>
         </li>
         <li className="hover:text-primary-button transition-all text-primary-text duration-400 cursor-pointer hover:font-bold flex items-center gap-1">
-          <Send className=" size-4" />
-          Contact
+          <a href="/contact" className="flex items-center gap-1">
+            <Send className=" size-4" />
+            Contact
+          </a>
         </li>
       </ul>
     </nav>

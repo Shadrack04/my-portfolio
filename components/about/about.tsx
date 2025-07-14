@@ -4,6 +4,7 @@ import Stack from "../stack/stack";
 
 import Experience from "../experience/experience";
 import AnimationWrapper from "../animation/animation-wrapper";
+import Projects from "../projects/projects";
 
 export default function About() {
   return (
@@ -30,6 +31,7 @@ export default function About() {
       </div>
       <Stack />
       <Experience />
+      <Projects />
     </div>
   );
 }

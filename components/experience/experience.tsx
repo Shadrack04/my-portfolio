@@ -79,7 +79,7 @@ const items = [
 
 export default function Experience() {
   return (
-    <div className=" lg:px-16 bg-foreground">
+    <div className=" lg:px-14">
       <div className=" flex flex-col items-center mb-4">
         <h2 className=" text-2xl font-bold text-primary-text mb-2">
           My Work Experience
@@ -90,7 +90,11 @@ export default function Experience() {
         </p>
       </div>
       <div className=" my-12">
-        <Timeline defaultValue={3} className=" lg:max-w-[55rem] flex flex-col ">
+        <Timeline
+          value={0}
+          defaultValue={3}
+          className=" lg:max-w-[55rem] flex flex-col "
+        >
           {items.map((item) => (
             <TimelineItem
               key={item.id}
@@ -131,6 +135,7 @@ export default function Experience() {
                     <AnimationWrapper
                       as="li"
                       whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, amount: 0.8 }}
                       key={index}
                       variants={itemVariants}
                       className=" list-disc text-content-text text-lg/relaxed"

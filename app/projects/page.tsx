@@ -1,10 +1,10 @@
-import About from "@/components/about/about";
+import Projects from "@/components/projects/projects";
 import React from "react";
 
 export default function page() {
   return (
     <div className="costume-padding py-8">
-      <About />;
+      <Projects />
     </div>
   );
 }
