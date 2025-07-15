@@ -74,8 +74,20 @@ export default async function Banner() {
           transition={{ duration: 0.6 }}
           whileInView={{ opacity: 1, y: 0 }}
         >
-          <Button type="primary">Let&apos;s Connect</Button>
-          <Button type="secondary">Resume</Button>
+          <Button
+            variant="default"
+            type="button"
+            className=" bg-primary-button transition-colors duration-300 ease-in-out cursor-pointer text-white text-md font-bold hover:bg-primary-color/90"
+          >
+            Let&apos;s Connect
+          </Button>
+          <Button
+            variant="outline"
+            type="button"
+            className=" flex items-center bg-foreground cursor-pointer hover:bg-primary-button hover:text-white transition-colors duration-300 ease-in-out text-md font-bold border-primary-color border-1 text-primary-text"
+          >
+            Resume
+          </Button>
         </AnimationWrapper>
       </div>
     </div>
