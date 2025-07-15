@@ -8,7 +8,7 @@ import Projects from "../projects/projects";
 
 export default function About() {
   return (
-    <div className="costume-padding py-8">
+    <div id="about" className="costume-padding py-8">
       <div className=" flex flex-col items-center mb-8">
         <h1 className=" text-4xl font-bold text-primary-text">About Me</h1>
         <div className=" flex flex-col gap-0.5 mb-8">

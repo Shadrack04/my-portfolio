@@ -3,7 +3,7 @@ import ProjectItem from "./project-item";
 
 export default function Projects() {
   return (
-    <div className="costume-padding py-8">
+    <div id="projects" className="costume-padding py-8">
       <div className=" flex flex-col items-center mb-4">
         <h2 className=" text-4xl font-bold text-primary-text mb-4 pb-2">
           My Projects
@@ -17,7 +17,7 @@ export default function Projects() {
         </p>
       </div>
 
-      <div className=" my-12 grid gap-y-20 lg:px-14 md:px-6 px-2 place-items-center">
+      <div className=" my-12 grid gap-y-20  md:px-1  place-items-center">
         {[1, 2, 3].map((_, index) => (
           <ProjectItem key={index} index={index} />
         ))}
