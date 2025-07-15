@@ -9,14 +9,14 @@ export const banner = defineType({
       name: "name",
       type: "string",
     }),
-    defineField({
-      name: "title",
-      type: "array",
-      of: [{ type: "string" }],
-    }),
+
     defineField({
       name: "image",
+      title: "Image",
       type: "image",
+      options: {
+        hotspot: true,
+      },
     }),
     defineField({
       name: "content",
