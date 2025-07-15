@@ -3,7 +3,8 @@ import React from "react";
 
 import Image from "next/image";
 import { images } from "@/constants/images";
-import Button from "../button";
+// import Button from "../button";
+import { Button } from "../ui/button";
 import Typewriter from "./typewriter";
 import AnimationWrapper from "../animation/animation-wrapper";
 // import { getBanner } from "@/sanity/sanity-utils";
@@ -35,8 +36,20 @@ export default async function Banner() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <Button type="primary">Let&apos;s Connect</Button>
-            <Button type="secondary">Resume</Button>
+            <Button
+              variant="default"
+              type="button"
+              className=" bg-primary-button transition-colors duration-300 ease-in-out cursor-pointer text-white text-md font-bold hover:bg-primary-color/90"
+            >
+              Let&apos;s Connect
+            </Button>
+            <Button
+              variant="outline"
+              type="button"
+              className=" flex items-center bg-foreground cursor-pointer hover:bg-primary-button hover:text-white transition-colors duration-300 ease-in-out text-md font-bold border-primary-color border-1 text-primary-text"
+            >
+              Resume
+            </Button>
           </AnimationWrapper>
         </div>
 

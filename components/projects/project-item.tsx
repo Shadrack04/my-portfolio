@@ -50,12 +50,12 @@ export default function ProjectItem({ index }: ProjectItemProps) {
           </div>
         </div>
         <div className=" flex gap-4">
-          <Button className=" px-4 py-2 rounded-md text-md font-bold bg-primary-button text-white">
+          <Button className=" bg-primary-button transition-colors duration-300 ease-in-out cursor-pointer text-white text-md font-bold hover:bg-primary-color/90">
             Preview
           </Button>
-          <Button className=" flex items-center px-4 py-2 rounded-md text-md font-bold border-primary-color border-1 text-primary-text">
+          <Button className=" flex group items-center bg-foreground cursor-pointer hover:bg-primary-button hover:text-white transition-colors duration-300 ease-in-out text-md font-bold border-primary-color border-1 text-primary-text">
             Code
-            <FaGithub className=" size-4 text-primary-color" />
+            <FaGithub className=" size-4 text-primary-color group-hover:text-white" />
           </Button>
         </div>
       </div>
