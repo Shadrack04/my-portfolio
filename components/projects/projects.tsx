@@ -17,7 +17,7 @@ export default function Projects() {
         </p>
       </div>
 
-      <div className=" my-12 grid gap-y-20  md:px-6  place-items-center">
+      <div className=" my-12 grid gap-y-20  md:px-1  place-items-center">
         {[1, 2, 3].map((_, index) => (
           <ProjectItem key={index} index={index} />
         ))}
