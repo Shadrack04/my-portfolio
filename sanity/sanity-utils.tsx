@@ -14,3 +14,14 @@ export const getBanner = async () => {
     }
     }`);
 };
+
+export const getAboutMe = () => {
+  return client.fetch(groq`*[_type == "aboutMe"]{
+  stackImage,
+    _id,
+    title,
+    subContent,
+    subtitle,
+      mainContent,
+}`);
+};

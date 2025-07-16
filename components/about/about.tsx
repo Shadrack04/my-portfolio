@@ -5,8 +5,11 @@ import Stack from "../stack/stack";
 import Experience from "../experience/experience";
 import AnimationWrapper from "../animation/animation-wrapper";
 import Projects from "../projects/projects";
+import { getAboutMe } from "@/sanity/sanity-utils";
 
-export default function About() {
+export default async function About() {
+  const aboutMe = await getAboutMe();
+  console.log(aboutMe);
   return (
     <div id="about" className="costume-padding py-8">
       <div className=" flex flex-col items-center mb-8">
