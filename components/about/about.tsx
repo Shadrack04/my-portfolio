@@ -9,7 +9,7 @@ import { getAboutMe } from "@/sanity/sanity-utils";
 
 export default async function About() {
   const aboutMe = await getAboutMe();
-  console.log(aboutMe);
+  
   return (
     <div id="about" className="costume-padding py-8">
       <div className=" flex flex-col items-center mb-8">
