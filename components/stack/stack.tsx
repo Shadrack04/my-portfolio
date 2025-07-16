@@ -1,7 +1,7 @@
 import React from "react";
 import Floater from "./floater";
 
-export default function Stack() {
+export default async function Stack() {
   return (
     <div className="costume-padding my-12">
       <div className=" flex flex-col items-center mb-4">

@@ -16,12 +16,28 @@ export const getBanner = async () => {
 };
 
 export const getAboutMe = () => {
-  return client.fetch(groq`*[_type == "aboutMe"]{
-  stackImage,
+  return client.fetch(groq`*[_type == "aboutMe"][0]{
+  stackImage[]{
+    asset->{
+      _id,
+      url
+    }
+  },
     _id,
     title,
     subContent,
     subtitle,
       mainContent,
 }`);
+};
+
+export const getStacks = () => {
+  return client.fetch(groq`*[_type == "aboutMe"][0]{
+        stackImage[]{
+    asset->{
+      _id,
+      url
+    }
+  },
+    }`);
 };
