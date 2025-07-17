@@ -47,3 +47,30 @@ export const getExperience = (): Promise<ExperienceType> => {
     tasks
 }`);
 };
+
+export const getProjects = () => {
+  return client.fetch(groq`*[_type == "projects"]{
+  _id,
+    projectDescription,
+    projectLink,
+    projectName,
+    title,
+    image{
+    asset->{
+      _id,
+      url,
+    }
+    },
+  stacks[]{
+    stackName,
+    image{
+      asset->{
+        _id,
+        url
+      }
+    }
+  }
+}
+  
+`);
+};
