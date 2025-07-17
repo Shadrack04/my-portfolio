@@ -11,6 +11,7 @@ import {
   TimelineTitle,
 } from "@/components/ui/timeline";
 import AnimationWrapper from "../animation/animation-wrapper";
+import { getExperience } from "@/sanity/sanity-utils";
 
 const containerVariants = {
   hidden: {},
@@ -77,7 +78,9 @@ const items = [
   },
 ];
 
-export default function Experience() {
+export default async function Experience() {
+  const experience = await getExperience();
+  console.log(experience);
   return (
     <div className=" lg:px-14">
       <div className=" flex flex-col items-center mb-4">
@@ -95,10 +98,10 @@ export default function Experience() {
           defaultValue={3}
           className=" lg:max-w-[55rem] flex flex-col "
         >
-          {items.map((item) => (
+          {experience?.map((item, index) => (
             <TimelineItem
-              key={item.id}
-              step={item.id}
+              key={index}
+              step={index}
               className=" hover:shadow-sm rounded-xl py-6 pl-2 md:py-6 md:px-6  group-data-[orientation=vertical]/timeline:ms-10"
             >
               <TimelineHeader>
@@ -110,9 +113,9 @@ export default function Experience() {
                   {item.date}
                 </TimelineDate>
                 <TimelineTitle className=" text-primary-text flex flex-col">
-                  <p className=" text-xl font-medium ">AGM Tech Pulse</p>
+                  <p className=" text-xl font-medium ">{item.company}</p>
                   <p className=" text-lg font-bold text-special-text">
-                    {item.title}
+                    {item.role}
                   </p>
                 </TimelineTitle>
                 <TimelineIndicator
@@ -131,7 +134,7 @@ export default function Experience() {
                   whileInView="show"
                   viewport={{ once: true, amount: 0.3 }}
                 >
-                  {item.description?.map((task, index) => (
+                  {item.tasks?.map((task, index) => (
                     <AnimationWrapper
                       as="li"
                       whileInView={{ opacity: 1, y: 0 }}

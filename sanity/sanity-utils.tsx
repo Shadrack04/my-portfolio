@@ -1,5 +1,6 @@
 import { groq } from "next-sanity";
 import { client } from "./lib/client";
+import { ExperienceType } from "@/types";
 
 export const getBanner = async () => {
   return client.fetch(groq`*[_type == "banner"][0]{
@@ -35,4 +36,14 @@ export const getStacks = () => {
     }
   },
     }`);
+};
+
+export const getExperience = (): Promise<ExperienceType> => {
+  return client.fetch(groq`*[_type == "experience"]{
+  name,
+    company,
+    role,
+    date,
+    tasks
+}`);
 };
