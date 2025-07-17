@@ -1,17 +1,17 @@
-import { images } from "@/constants/images";
 import Image from "next/image";
 import React from "react";
-import { FaReact } from "react-icons/fa";
-
 import { Button } from "../ui/button";
 import { FaGithub } from "react-icons/fa6";
+import { ProjectItemType } from "@/types";
 // import AnimationWrapper from "../animation/animation-wrapper";
 
 type ProjectItemProps = {
   index: number;
+  project: ProjectItemType;
 };
 
-export default function ProjectItem({ index }: ProjectItemProps) {
+export default function ProjectItem({ index, project }: ProjectItemProps) {
+  const projectImage = project?.image.asset.url;
   const alignment = index % 2 !== 0 ? "lg:flex-row-reverse" : "";
   return (
     <div
@@ -19,7 +19,7 @@ export default function ProjectItem({ index }: ProjectItemProps) {
     >
       {/* <AnimationWrapper className=" flex-1 w-full lg:w-[350px] hover:scale-102 transition-all duration-300 rounded-md"> */}
       <Image
-        src={images.kdn_hero_image}
+        src={projectImage}
         alt="Kdn mockup image"
         width={450}
         height={260}
@@ -29,13 +29,29 @@ export default function ProjectItem({ index }: ProjectItemProps) {
 
       <div className="px-2 flex-1 flex flex-col">
         <div className="">
-          <p className=" text-2xl font-bold text-special-text">KDN plus</p>
+          <p className=" text-2xl font-bold text-special-text">
+            {project?.projectName}
+          </p>
           <p className=" text-content-text text-lg">
-            Stream your favorite, hot and new Nollywood movies anytime,
-            anywhere- your ultimate home for cinematic entertainment.
+            {project?.projectDescription}
           </p>
           <div className=" flex items-center gap-2 my-4 flex-wrap">
-            <div className=" card-shadow px-2 group flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
+            {project?.stacks?.map((stack, index) => (
+              <div
+                key={index}
+                className=" card-shadow px-2 group flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg"
+              >
+                {/* <FaReact className=" group-hover:text-white text-primary-color" /> */}
+                <Image
+                  src={stack.image.asset.url}
+                  alt={`${stack.stackName} icon`}
+                  height={15}
+                  width={15}
+                />
+                <p className="  font-medium">ReactJs</p>
+              </div>
+            ))}
+            {/* <div className=" card-shadow px-2 group flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
               <FaReact className=" group-hover:text-white text-primary-color" />
               <p className="  font-medium">ReactJs</p>
             </div>
@@ -46,17 +62,21 @@ export default function ProjectItem({ index }: ProjectItemProps) {
             <div className=" card-shadow px-2 group flex gap-1 items-center text-primary-text transition-all duration-300 justify-between hover:bg-primary-color hover:text-white rounded-lg">
               <FaReact className=" group-hover:text-white text-primary-color" />
               <p className="  font-medium">ReactJs</p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className=" flex gap-4">
-          <Button className=" bg-primary-button transition-colors duration-300 ease-in-out cursor-pointer text-white text-md font-bold hover:bg-primary-color/90">
-            Preview
-          </Button>
-          <Button className=" flex group items-center bg-foreground cursor-pointer hover:bg-primary-button hover:text-white transition-colors duration-300 ease-in-out text-md font-bold border-primary-color border-1 text-primary-text">
-            Code
-            <FaGithub className=" size-4 text-primary-color group-hover:text-white" />
-          </Button>
+          {project?.projectLink && (
+            <Button className=" bg-primary-button transition-colors duration-300 ease-in-out cursor-pointer text-white text-md font-bold hover:bg-primary-color/90">
+              Preview
+            </Button>
+          )}
+          {project?.gitLink && (
+            <Button className=" flex group items-center bg-foreground cursor-pointer hover:bg-primary-button hover:text-white transition-colors duration-300 ease-in-out text-md font-bold border-primary-color border-1 text-primary-text">
+              Code
+              <FaGithub className=" size-4 text-primary-color group-hover:text-white" />
+            </Button>
+          )}
         </div>
       </div>
     </div>

@@ -1,7 +1,10 @@
 import React from "react";
 import ProjectItem from "./project-item";
+import { getProjects } from "@/sanity/sanity-utils";
 
-export default function Projects() {
+export default async function Projects() {
+  const projects = await getProjects();
+  // console.log(projects);
   return (
     <div id="projects" className="costume-padding py-8">
       <div className=" flex flex-col items-center mb-4">
@@ -18,8 +21,8 @@ export default function Projects() {
       </div>
 
       <div className=" my-12 grid gap-y-20  md:px-1  place-items-center">
-        {[1, 2, 3].map((_, index) => (
-          <ProjectItem key={index} index={index} />
+        {projects.map((project, index) => (
+          <ProjectItem project={project} key={project._id} index={index} />
         ))}
       </div>
     </div>

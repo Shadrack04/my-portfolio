@@ -1,6 +1,6 @@
 import { groq } from "next-sanity";
 import { client } from "./lib/client";
-import { ExperienceType } from "@/types";
+import { ExperienceType, ProjectsType } from "@/types";
 
 export const getBanner = async () => {
   return client.fetch(groq`*[_type == "banner"][0]{
@@ -16,7 +16,7 @@ export const getBanner = async () => {
     }`);
 };
 
-export const getAboutMe = () => {
+export const getAboutMe = async () => {
   return client.fetch(groq`*[_type == "aboutMe"][0]{
   
     _id,
@@ -27,7 +27,7 @@ export const getAboutMe = () => {
 }`);
 };
 
-export const getStacks = () => {
+export const getStacks = async () => {
   return client.fetch(groq`*[_type == "aboutMe"][0]{
         stackImage[]{
     asset->{
@@ -38,7 +38,7 @@ export const getStacks = () => {
     }`);
 };
 
-export const getExperience = (): Promise<ExperienceType> => {
+export const getExperience = async (): Promise<ExperienceType> => {
   return client.fetch(groq`*[_type == "experience"]{
   name,
     company,
@@ -48,11 +48,12 @@ export const getExperience = (): Promise<ExperienceType> => {
 }`);
 };
 
-export const getProjects = () => {
+export const getProjects = async (): Promise<ProjectsType> => {
   return client.fetch(groq`*[_type == "projects"]{
   _id,
     projectDescription,
     projectLink,
+    gitLink,
     projectName,
     title,
     image{
