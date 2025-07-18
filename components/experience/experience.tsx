@@ -99,7 +99,7 @@ export default function Experience() {
             <TimelineItem
               key={item.id}
               step={item.id}
-              className=" rounded-xl pl-2 md:px-6  group-data-[orientation=vertical]/timeline:ms-10"
+              className=" rounded-xl  group-data-[orientation=vertical]/timeline:ms-10"
             >
               <TimelineHeader>
                 <TimelineSeparator
