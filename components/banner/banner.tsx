@@ -15,7 +15,7 @@ export default async function Banner() {
     <div id="home" className=" costume-padding pb-10 md:pb-28">
       {/* <MyName /> */}
       <div className=" flex flex-col 2xl:gap-30 md:flex-row gap-6 lg:gap-10 justify-center items-center">
-        <div className="lg:w-[50%]">
+        <div className="md:w-[50%]">
           <Typewriter />
 
           <AnimationWrapper

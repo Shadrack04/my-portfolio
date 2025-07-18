@@ -99,7 +99,7 @@ export default function Experience() {
             <TimelineItem
               key={item.id}
               step={item.id}
-              className=" hover:shadow-sm rounded-xl py-6 pl-2 md:py-6 md:px-6  group-data-[orientation=vertical]/timeline:ms-10"
+              className=" rounded-xl pl-2 md:px-6  group-data-[orientation=vertical]/timeline:ms-10"
             >
               <TimelineHeader>
                 <TimelineSeparator
