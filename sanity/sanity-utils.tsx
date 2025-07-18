@@ -1,8 +1,14 @@
 import { groq } from "next-sanity";
 import { client } from "./lib/client";
-import { ExperienceType, ProjectsType, StacksType } from "@/types";
+import {
+  AboutMeType,
+  BannerType,
+  ExperienceType,
+  ProjectsType,
+  StacksType,
+} from "@/types";
 
-export const getBanner = async () => {
+export const getBanner = async (): Promise<BannerType> => {
   return client.fetch(groq`*[_type == "banner"][0]{
     _id,
     name,
@@ -16,7 +22,7 @@ export const getBanner = async () => {
     }`);
 };
 
-export const getAboutMe = async () => {
+export const getAboutMe = async (): Promise<AboutMeType> => {
   return client.fetch(groq`*[_type == "aboutMe"][0]{
   
     _id,

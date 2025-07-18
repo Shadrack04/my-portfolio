@@ -11,7 +11,6 @@ type StackImageType = {
 
 export default async function Floater() {
   const stacks = await getStacks();
-  console.log(stacks);
 
   return (
     <FloatingElements

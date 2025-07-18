@@ -9,6 +9,7 @@ import { getBanner } from "@/sanity/sanity-utils";
 
 export default async function Banner() {
   const banner = await getBanner();
+  console.log(banner);
   return (
     <div id="home" className=" costume-padding pb-10 md:pb-28">
       <div className=" flex flex-col 2xl:gap-30 md:flex-row gap-6 lg:gap-10 justify-center items-center">
@@ -55,7 +56,7 @@ export default async function Banner() {
           animate={{ scale: 1 }}
           transition={{ duration: 0.4 }}
         >
-          {banner?.image.asset.url && (
+          {banner?.image?.asset.url && (
             <Image
               src={banner?.image.asset.url}
               width={346}

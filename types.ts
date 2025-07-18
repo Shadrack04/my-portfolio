@@ -5,6 +5,21 @@ type ImageType = {
   };
 };
 
+export type BannerType = {
+  _id: string;
+  name: string;
+  content: string;
+  image: ImageType;
+};
+
+export type AboutMeType = {
+  _id: string;
+  title: string;
+  subContent: string;
+  subtitle: string;
+  mainContent: string;
+};
+
 type ExperienceItem = {
   company: string;
   name: string;
@@ -33,26 +48,3 @@ export type ProjectsType = [ProjectItemType];
 export type StacksType = {
   stackImage: ImageType[];
 };
-
-// *[_type == "projects"]{
-//   _id,
-//     projectDescription,
-//     projectLink,
-//     projectName,
-//     title,
-//     image{
-//     asset->{
-//       _id,
-//       url,
-//     }
-//     },
-//   stacks[]{
-//     stackName,
-//     image{
-//       asset->{
-//         _id,
-//         url
-//       }
-//     }
-//   }
-// }
