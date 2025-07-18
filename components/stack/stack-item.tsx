@@ -17,7 +17,7 @@ export default function StackItem({ imageItem }: StackItemProps) {
         width={80}
         height={80}
         alt="language icon"
-        className=" aspect-square size-18"
+        className=" aspect-square size-18 rounded-full"
       />
     </div>
   );

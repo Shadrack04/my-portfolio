@@ -30,6 +30,10 @@ export type ProjectItemType = {
 
 export type ProjectsType = [ProjectItemType];
 
+export type StacksType = {
+  stackImage: ImageType[];
+};
+
 // *[_type == "projects"]{
 //   _id,
 //     projectDescription,
