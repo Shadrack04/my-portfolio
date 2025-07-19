@@ -1,8 +1,8 @@
 import { groq } from "next-sanity";
 import { client } from "./lib/client";
 import {
-  AboutMeType,
-  BannerType,
+  // AboutMeType,
+  // BannerType,
   ExperienceType,
   ProjectsType,
   StacksType,
