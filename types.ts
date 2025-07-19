@@ -5,20 +5,20 @@ type ImageType = {
   };
 };
 
-export type BannerType = {
-  _id: string;
-  name: string;
-  content: string;
-  image: ImageType;
-};
+// export type BannerType = {
+//   _id: string;
+//   name: string;
+//   content: string;
+//   image: ImageType;
+// };
 
-export type AboutMeType = {
-  _id: string;
-  title: string;
-  subContent: string;
-  subtitle: string;
-  mainContent: string;
-};
+// export type AboutMeType = {
+//   _id: string;
+//   title: string;
+//   subContent: string;
+//   subtitle: string;
+//   mainContent: string;
+// };
 
 type ExperienceItem = {
   company: string;

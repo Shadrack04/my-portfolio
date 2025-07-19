@@ -8,7 +8,8 @@ import {
   StacksType,
 } from "@/types";
 
-export const getBanner = async (): Promise<BannerType> => {
+// export const getBanner = async (): Promise<BannerType> => {
+export const getBanner = async () => {
   return client.fetch(groq`*[_type == "banner"][0]{
     _id,
     name,
@@ -22,7 +23,8 @@ export const getBanner = async (): Promise<BannerType> => {
     }`);
 };
 
-export const getAboutMe = async (): Promise<AboutMeType> => {
+// export const getAboutMe = async (): Promise<AboutMeType> => {
+export const getAboutMe = async () => {
   return client.fetch(groq`*[_type == "aboutMe"][0]{
   
     _id,
