@@ -14,7 +14,7 @@ export default function StackItem({ icon }: StackItemProps) {
         className=" w-8 h-8 text-primary-color"
         dangerouslySetInnerHTML={{ __html: icon?.svg }}
       />
-      <p className=" text-lg text-primary-text font-bold">{icon.title}</p>
+      <p className=" text-lg text-content-text font-bold">{icon.title}</p>
     </div>
   );
 }
