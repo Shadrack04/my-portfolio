@@ -1,24 +1,20 @@
-import Image from "next/image";
 import React from "react";
 
 type StackItemProps = {
-  imageItem: {
-    _id: string;
-    url: string;
+  icon: {
+    title: string;
+    svg: string;
   };
 };
 
-export default function StackItem({ imageItem }: StackItemProps) {
-  const imageUrl = imageItem.url;
+export default function StackItem({ icon }: StackItemProps) {
   return (
-    <div className=" card-shadow p-4 flex items-center justify-center flex-col rounded-full">
-      <Image
-        src={imageUrl}
-        width={80}
-        height={80}
-        alt="language icon"
-        className=" aspect-square size-18 rounded-full"
+    <div className="stack-card-shadow hover:-translate-y-1 transition-transform duration-300 p-4 flex items-center gap-2 justify-center flex-col rounded-xl">
+      <div
+        className=" w-8 h-8 text-primary-color"
+        dangerouslySetInnerHTML={{ __html: icon?.svg }}
       />
+      <p className=" text-lg text-primary-text font-bold">{icon.title}</p>
     </div>
   );
 }

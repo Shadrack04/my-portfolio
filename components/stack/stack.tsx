@@ -1,5 +1,7 @@
 import React from "react";
-import Floater from "./floater";
+
+import StackItem from "./stack-item";
+import { getIcons } from "@/sanity/sanity-utils";
 
 type StackProps = {
   subTitle: string;
@@ -7,6 +9,7 @@ type StackProps = {
 };
 
 export default async function Stack({ subTitle, subContent }: StackProps) {
+  const stackIcons = await getIcons();
   return (
     <div className="costume-padding my-12">
       <div className=" flex flex-col items-center mb-4">
@@ -17,8 +20,10 @@ export default async function Stack({ subTitle, subContent }: StackProps) {
         <p className=" text-content-text text-lg/relaxed">{subContent}</p>
       </div>
 
-      <div className=" lg:w-[75%] mx-auto">
-        <Floater />
+      <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+        {stackIcons.map((icon) => (
+          <StackItem key={icon._id} icon={icon} />
+        ))}
       </div>
     </div>
   );

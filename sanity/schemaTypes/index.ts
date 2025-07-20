@@ -8,6 +8,7 @@ import { banner } from "./banner";
 import { about } from "./about";
 import { experience } from "./experience";
 import { projects } from "./projects";
+import { stacks } from "./stacks";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -19,5 +20,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     about,
     experience,
     projects,
+    stacks,
   ],
 };
