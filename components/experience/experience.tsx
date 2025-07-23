@@ -100,9 +100,10 @@ export default async function Experience() {
         >
           {experience?.map((item, index) => (
             <TimelineItem
-              key={index}
-              step={index}
-              className=" hover:shadow-sm rounded-xl py-6 pl-2 md:py-6 md:px-6  group-data-[orientation=vertical]/timeline:ms-10"
+
+              key={item.id}
+              step={item.id}
+              className=" rounded-xl  group-data-[orientation=vertical]/timeline:ms-10"
             >
               <TimelineHeader>
                 <TimelineSeparator

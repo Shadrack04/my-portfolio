@@ -13,7 +13,7 @@ export default async function Banner() {
   return (
     <div id="home" className=" costume-padding pb-10 md:pb-28">
       <div className=" flex flex-col 2xl:gap-30 md:flex-row gap-6 lg:gap-10 justify-center items-center">
-        <div className="lg:w-[50%]">
+        <div className="md:w-[50%]">
           <Typewriter />
 
           <AnimationWrapper
@@ -68,8 +68,9 @@ export default async function Banner() {
           )}
         </AnimationWrapper>
 
+        {/* mobile banner buttons */}
         <AnimationWrapper
-          className=" md:hidden flex flex-col items-center gap-4"
+          className=" md:hidden flex mt-4 items-center gap-4"
           initial={{ opacity: 0, y: 80 }}
           transition={{ duration: 0.6 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -77,14 +78,14 @@ export default async function Banner() {
           <Button
             variant="default"
             type="button"
-            className=" bg-primary-button transition-colors duration-300 ease-in-out cursor-pointer text-white text-md font-bold hover:bg-primary-color/90"
+            className=" bg-primary-button py-6 transition-colors duration-300 ease-in-out cursor-pointer text-white text-md font-bold hover:bg-primary-color/90"
           >
             Let&apos;s Connect
           </Button>
           <Button
             variant="outline"
             type="button"
-            className=" flex items-center bg-foreground cursor-pointer hover:bg-primary-button hover:text-white transition-colors duration-300 ease-in-out text-md font-bold border-primary-color border-1 text-primary-text"
+            className=" flex items-center py-6 bg-foreground cursor-pointer hover:bg-primary-button hover:text-white transition-colors duration-300 ease-in-out text-md font-bold border-primary-color border-1 text-primary-text"
           >
             Resume
           </Button>
