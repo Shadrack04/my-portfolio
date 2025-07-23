@@ -1,28 +1,20 @@
-import { svg } from "@/constants/svg";
-import Image from "next/image";
 import React from "react";
 
-export default function StackItem() {
+type StackItemProps = {
+  icon: {
+    title: string;
+    svg: string;
+  };
+};
+
+export default function StackItem({ icon }: StackItemProps) {
   return (
-    <div className=" card-shadow p-4 flex items-center justify-center flex-col rounded-full">
-      <Image
-        src={svg.tailwindIcon}
-        width={80}
-        height={80}
-        alt="language icon"
-        className=" aspect-square"
+    <div className="stack-card-shadow hover:-translate-y-1 transition-transform duration-300 p-4 flex items-center gap-2 justify-center flex-col rounded-xl">
+      <div
+        className=" w-8 h-8 text-primary-color"
+        dangerouslySetInnerHTML={{ __html: icon?.svg }}
       />
-      {/* <p className=" text-primary-text font-bold text-xs">Tailwindcss</p> */}
+      <p className=" text-lg text-content-text font-bold">{icon.title}</p>
     </div>
   );
-}
-
-{
-  /* <div className=" card-shadow border-primary-color border-1  bg-[#ECFAE5] md:w-[16rem] hover:scale-105 transition-all duration-300 flex items-center flex-col py-6 px-4 rounded-2xl">
-  <FaReact className=" p-2 rounded-full bg-white text-primary-button size-20 mb-2" />
-  <p className=" text-primary-text font-bold text-2xl my-4">React.Js</p>
-  <p className=" text-content-text  text-center">
-    A javascript library for building UI and single page apps
-  </p>
-</div>; */
 }
