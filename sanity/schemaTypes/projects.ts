@@ -1,4 +1,4 @@
-import { defineField, defineType } from "sanity";
+import { defineArrayMember, defineField, defineType } from "sanity";
 
 export const projects = defineType({
   name: "projects",
@@ -30,31 +30,8 @@ export const projects = defineType({
 
     defineField({
       name: "stacks",
-      title: "Stacks",
       type: "array",
-      of: [
-        {
-          type: "object",
-          fields: [
-            defineField({
-              name: "image",
-              type: "image",
-              options: { hotspot: true },
-            }),
-
-            defineField({
-              name: "stackName",
-              type: "string",
-            }),
-          ],
-          preview: {
-            select: {
-              title: "description",
-              media: "image",
-            },
-          },
-        },
-      ],
+      of: [defineArrayMember({ type: "reference", to: { type: "stacks" } })],
     }),
 
     defineField({

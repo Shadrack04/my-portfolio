@@ -48,3 +48,9 @@ export type ProjectsType = [ProjectItemType];
 export type StacksType = {
   stackImage: ImageType[];
 };
+
+export type IconType = {
+  _id: string;
+  svg: string;
+  title: string;
+}[];

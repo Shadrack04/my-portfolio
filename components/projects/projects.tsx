@@ -20,7 +20,7 @@ export default async function Projects() {
         </p>
       </div>
 
-      <div className=" my-12 grid gap-y-20  md:px-1  place-items-center">
+      <div className=" my-12 grid gap-y-20   place-items-center">
         {projects.map((project, index) => (
           <ProjectItem project={project} key={project._id} index={index} />
         ))}

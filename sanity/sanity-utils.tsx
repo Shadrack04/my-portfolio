@@ -4,6 +4,7 @@ import {
   // AboutMeType,
   // BannerType,
   ExperienceType,
+  IconType,
   ProjectsType,
   StacksType,
 } from "@/types";
@@ -82,4 +83,12 @@ export const getProjects = async (): Promise<ProjectsType> => {
 }
   
 `);
+};
+
+export const getIcons = async (): Promise<IconType> => {
+  return client.fetch(groq`*[_type == "stacks"]{
+  _id,
+  title,
+    svg
+}`);
 };
