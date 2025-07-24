@@ -6,6 +6,12 @@ export const stacks = defineType({
   type: "document",
   fields: [
     defineField({
+      name: "order",
+      title: "Sort Order",
+      type: "number",
+    }),
+
+    defineField({
       name: "title",
       type: "string",
     }),
@@ -15,5 +21,13 @@ export const stacks = defineType({
       title: "Svg Code",
       type: "text",
     }),
+  ],
+
+  orderings: [
+    {
+      title: "Custom Order",
+      name: "customOrder",
+      by: [{ field: "order", direction: "asc" }],
+    },
   ],
 });

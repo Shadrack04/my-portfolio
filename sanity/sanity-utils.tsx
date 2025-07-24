@@ -86,9 +86,10 @@ export const getProjects = async (): Promise<ProjectsType> => {
 };
 
 export const getIcons = async (): Promise<IconType> => {
-  return client.fetch(groq`*[_type == "stacks"]{
+  return client.fetch(groq`*[_type == "stacks"] | order(order asc){
   _id,
   title,
-    svg
+    svg,
+    order
 }`);
 };
