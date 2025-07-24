@@ -21,6 +21,7 @@ type ImageType = {
 // };
 
 type ExperienceItem = {
+  _id: string;
   company: string;
   name: string;
   role: string;

@@ -100,9 +100,8 @@ export default async function Experience() {
         >
           {experience?.map((item, index) => (
             <TimelineItem
-
-              key={item.id}
-              step={item.id}
+              key={item._id}
+              step={index}
               className=" rounded-xl  group-data-[orientation=vertical]/timeline:ms-10"
             >
               <TimelineHeader>

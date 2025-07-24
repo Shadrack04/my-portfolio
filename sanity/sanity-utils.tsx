@@ -49,6 +49,7 @@ export const getStacks = async (): Promise<StacksType> => {
 
 export const getExperience = async (): Promise<ExperienceType> => {
   return client.fetch(groq`*[_type == "experience"]{
+    _id,
   name,
     company,
     role,
