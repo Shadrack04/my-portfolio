@@ -6,6 +6,7 @@ import { Button } from "../ui/button";
 import Typewriter from "./typewriter";
 import AnimationWrapper from "../animation/animation-wrapper";
 import { getBanner } from "@/sanity/sanity-utils";
+import { ArrowDown } from "lucide-react";
 
 export default async function Banner() {
   const banner = await getBanner();
@@ -90,6 +91,9 @@ export default async function Banner() {
             Resume
           </Button>
         </AnimationWrapper>
+      </div>
+      <div className="hidden lg:block card-shadow p-4 animate-bounce absolute bottom-8 left-[20%] rounded-full">
+        <ArrowDown className=" text-primary-color size-8" />
       </div>
     </div>
   );
