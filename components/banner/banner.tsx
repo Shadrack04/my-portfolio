@@ -92,7 +92,7 @@ export default async function Banner() {
           </Button>
         </AnimationWrapper>
       </div>
-      <div className="hidden lg:block card-shadow p-4 animate-bounce absolute bottom-8 left-[20%] rounded-full">
+      <div className="hidden lg:block card-shadow size-14 p-2 animate-bounce absolute bottom-8 left-[20%] rounded-full">
         <ArrowDown className=" text-primary-color size-8" />
       </div>
     </div>

@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import { FaGithub } from "react-icons/fa6";
 import { ProjectItemType } from "@/types";
+import AnimationWrapper from "../animation/animation-wrapper";
 // import AnimationWrapper from "../animation/animation-wrapper";
 
 type ProjectItemProps = {
@@ -11,7 +12,6 @@ type ProjectItemProps = {
 };
 
 export default function ProjectItem({ index, project }: ProjectItemProps) {
-  console.log(project.stacks);
   const projectImage = project?.image.asset.url;
   const alignment = index % 2 !== 0 ? "lg:flex-row-reverse" : "";
   return (
@@ -19,13 +19,21 @@ export default function ProjectItem({ index, project }: ProjectItemProps) {
       className={`${alignment} flex justify-center gap-4 flex-col lg:flex-row`}
     >
       {/* <AnimationWrapper className=" flex-1 w-full lg:w-[350px] hover:scale-102 transition-all duration-300 rounded-md"> */}
-      <Image
-        src={projectImage}
-        alt="Kdn mockup image"
-        width={450}
-        height={260}
-        className=" flex-1 w-full object-cover lg:w-[350px] hover:scale-102 transition-all duration-300 rounded-md"
-      />
+      <AnimationWrapper
+        initial={{ scale: 0 }}
+        transition={{ duration: 0.3 }}
+        whileInView={{ scale: 1 }}
+        viewport={{ once: true, amount: 0.8 }}
+        className="relative w-full lg:w-[350px] aspect-[450/260] flex-1 rounded-md overflow-hidden"
+      >
+        <Image
+          src={projectImage}
+          alt="Kdn mockup image"
+          fill
+          className="object-contain hover:scale-105 transition-all duration-300"
+        />
+      </AnimationWrapper>
+
       {/* </AnimationWrapper> */}
 
       <div className="px-2 flex-1 flex flex-col">
