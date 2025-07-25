@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
-import { FaGithub } from "react-icons/fa6";
+// import { FaGithub } from "react-icons/fa6";
 import { ProjectItemType } from "@/types";
 import AnimationWrapper from "../animation/animation-wrapper";
 // import AnimationWrapper from "../animation/animation-wrapper";
