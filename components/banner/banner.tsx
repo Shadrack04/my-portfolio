@@ -63,7 +63,7 @@ export default async function Banner() {
               width={346}
               height={380}
               alt="The developer's cartoon image"
-              className=" shadow-xs ring-4 ring-primary-color bg-amber-100 rounded-2xl "
+              className=" shadow-xs ring-1 ring-primary-color bg-gray-50 rounded-2xl "
               loading="lazy"
             />
           )}
