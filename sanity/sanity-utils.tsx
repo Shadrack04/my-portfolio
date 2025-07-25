@@ -48,7 +48,7 @@ export const getStacks = async (): Promise<StacksType> => {
 };
 
 export const getExperience = async (): Promise<ExperienceType> => {
-  return client.fetch(groq`*[_type == "experience"]{
+  return client.fetch(groq`*[_type == "experience"] | order(order asc){
     _id,
   name,
     company,
@@ -59,7 +59,7 @@ export const getExperience = async (): Promise<ExperienceType> => {
 };
 
 export const getProjects = async (): Promise<ProjectsType> => {
-  return client.fetch(groq`*[_type == "projects"]{
+  return client.fetch(groq`*[_type == "projects"] | order(order asc){
   _id,
     projectDescription,
     projectLink,
@@ -72,9 +72,9 @@ export const getProjects = async (): Promise<ProjectsType> => {
       url,
     }
     },
-  stacks[]{
-    stackName,
-    image{
+  stacks[]->{
+    title,
+    stackImage{
       asset->{
         _id,
         url

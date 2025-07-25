@@ -6,6 +6,12 @@ export const experience = defineType({
   type: "document",
   fields: [
     defineField({
+      name: "order",
+      title: "Sort Order",
+      type: "number",
+    }),
+
+    defineField({
       name: "name",
       type: "string",
     }),
@@ -34,5 +40,13 @@ export const experience = defineType({
       type: "array",
       of: [{ type: "string" }],
     }),
+  ],
+
+  orderings: [
+    {
+      title: "Custom Order",
+      name: "customOrder",
+      by: [{ field: "order", direction: "asc" }],
+    },
   ],
 });

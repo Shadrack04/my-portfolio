@@ -9,7 +9,7 @@ import { getBanner } from "@/sanity/sanity-utils";
 
 export default async function Banner() {
   const banner = await getBanner();
-  console.log(banner);
+
   return (
     <div id="home" className=" costume-padding pb-10 md:pb-28">
       <div className=" flex flex-col 2xl:gap-30 md:flex-row gap-6 lg:gap-10 justify-center items-center">

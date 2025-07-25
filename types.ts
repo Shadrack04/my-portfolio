@@ -31,7 +31,7 @@ type ExperienceItem = {
 
 export type ExperienceType = [ExperienceItem];
 
-type Stack = { stackName: string; image: ImageType };
+type Stack = { title: string; stackImage: ImageType };
 
 export type ProjectItemType = {
   _id: string;

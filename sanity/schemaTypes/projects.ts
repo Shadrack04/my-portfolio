@@ -6,6 +6,12 @@ export const projects = defineType({
   type: "document",
   fields: [
     defineField({
+      name: "order",
+      title: "Sort Order",
+      type: "number",
+    }),
+
+    defineField({
       name: "title",
       type: "string",
     }),
@@ -31,7 +37,9 @@ export const projects = defineType({
     defineField({
       name: "stacks",
       type: "array",
-      of: [defineArrayMember({ type: "reference", to: { type: "stacks" } })],
+      of: [
+        defineArrayMember({ type: "reference", to: { type: "stackSample" } }),
+      ],
     }),
 
     defineField({
@@ -43,5 +51,13 @@ export const projects = defineType({
       name: "gitLink",
       type: "string",
     }),
+  ],
+
+  orderings: [
+    {
+      title: "Custom Order",
+      name: "customOrder",
+      by: [{ field: "order", direction: "asc" }],
+    },
   ],
 });
