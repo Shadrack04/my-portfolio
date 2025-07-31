@@ -24,7 +24,7 @@ export default function ProjectItem({ index, project }: ProjectItemProps) {
         transition={{ duration: 0.3 }}
         whileInView={{ scale: 1 }}
         viewport={{ once: true, amount: 0.8 }}
-        className="relative w-full bg-amber-200 lg:w-[350px] aspect-[450/260] flex-1 rounded-md overflow-hidden"
+        className="relative w-full lg:w-[350px] aspect-[450/260] flex-1 rounded-md overflow-hidden"
       >
         <Image
           src={projectImage}
