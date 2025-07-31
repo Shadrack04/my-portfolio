@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/timeline";
 import AnimationWrapper from "../animation/animation-wrapper";
 import { getExperience } from "@/sanity/sanity-utils";
+import Title from "../title";
 
 const containerVariants = {
   hidden: {},
@@ -28,62 +29,12 @@ const itemVariants = {
   show: { opacity: 1, y: 0 },
 };
 
-// const items = [
-//   {
-//     id: 1,
-//     date: "Mar, 2024 - Present",
-//     title: "Frontend Developer",
-//     description: [
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//     ],
-//   },
-//   {
-//     id: 2,
-//     date: "Mar 22, 2024",
-//     title: "Design Phase",
-//     description: [
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//     ],
-//   },
-//   {
-//     id: 3,
-//     date: "Apr 5, 2024",
-//     title: "Development Sprint",
-//     description: [
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//     ],
-//   },
-//   {
-//     id: 4,
-//     date: "Apr 19, 2024",
-//     title: "Testing & Deployment",
-//     description: [
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//       "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
-//     ],
-//   },
-// ];
-
 export default async function Experience() {
   const experience = await getExperience();
 
   return (
     <div className=" lg:px-14">
-      <div className=" flex flex-col items-center mb-4">
+      {/* <div className=" flex flex-col items-center mb-4">
         <h2 className=" text-2xl font-bold text-primary-text mb-2">
           My Work Experience
         </h2>
@@ -91,7 +42,12 @@ export default async function Experience() {
         <p className=" text-content-text text-lg/relaxed">
           Company and roles i contributed to.
         </p>
-      </div>
+      </div> */}
+      <Title
+        isMainHeader={false}
+        title="My Work Experience"
+        subContent="Company and roles i contributed to."
+      />
       <div className=" my-12">
         <Timeline
           value={0}
