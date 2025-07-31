@@ -3,7 +3,7 @@ import React from "react";
 type TitleProps = {
   title: string;
   subContent: string;
-  isMainHeader: boolean;
+  isMainHeader?: boolean;
 };
 
 export default function Title({

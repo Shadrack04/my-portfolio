@@ -26,7 +26,7 @@ export default async function Projects() {
         subContent="Here are some of the projects I've worked on recently."
       />
 
-      <div className=" my-12 grid gap-y-20   place-items-center">
+      <div className=" my-12 grid gap-y-10   place-items-center">
         {projects.map((project, index) => (
           <ProjectItem project={project} key={project._id} index={index} />
         ))}
