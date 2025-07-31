@@ -76,9 +76,13 @@ export default async function Experience() {
                 </TimelineTitle>
                 <TimelineIndicator
                   // className={`${index == 0 ? "" : ""} group-data-completed/timeline-item:bg-primary-color group-data-completed/timeline-item:text-primary-foreground flex size-6 items-center justify-center group-data-completed/timeline-item:border-none group-data-[orientation=vertical]/timeline:-left-7`}
-                  className="group-data-completed/timeline-item:bg-primary-color group-data-completed/timeline-item:text-primary-foreground flex size-6 items-center justify-center group-data-completed/timeline-item:border-none group-data-[orientation=vertical]/timeline:-left-7"
+                  className={` ${index === 0 ? " border-2 border-primary-color bg-transparent" : " bg-primary-color border-none"} flex size-6 items-center justify-center group-data-[orientation=vertical]/timeline:-left-7`}
                 >
-                  <CheckIcon className=" text-white" size={16} />
+                  {index !== 0 && (
+                    <div className=" size-4">
+                      <CheckIcon className=" text-white font-bold" size={12} />
+                    </div>
+                  )}
                 </TimelineIndicator>
               </TimelineHeader>
               <TimelineContent className="">
