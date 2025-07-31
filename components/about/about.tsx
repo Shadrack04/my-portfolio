@@ -16,7 +16,7 @@ export default async function About() {
         <h1 className=" text-4xl font-bold text-primary-text">
           {aboutMe?.title}
         </h1>
-        <div className=" flex flex-col gap-0.5 mb-8">
+        <div className=" flex flex-col gap-0.5 mb-2">
           <div className=" w-40 h-0.5 bg-primary-color ml-4"></div>
           <div className=" w-40 h-0.5 bg-primary-color"></div>
         </div>
