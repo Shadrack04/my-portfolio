@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 import Typewriter from "./typewriter";
 import AnimationWrapper from "../animation/animation-wrapper";
 import { getBanner } from "@/sanity/sanity-utils";
-import { ArrowDown } from "lucide-react";
+// import { ArrowDown } from "lucide-react";
 
 export default async function Banner() {
   const banner = await getBanner();
@@ -36,11 +36,12 @@ export default async function Banner() {
             transition={{ duration: 0.4 }}
           >
             <Button
+              asChild
               variant="default"
               type="button"
               className=" bg-primary-button transition-colors duration-300 ease-in-out cursor-pointer text-white text-md font-bold hover:bg-primary-color/90"
             >
-              Let&apos;s Connect
+              <a href="/contact">Let&apos;s Connect</a>
             </Button>
             <Button
               variant="outline"
@@ -77,11 +78,12 @@ export default async function Banner() {
           whileInView={{ opacity: 1, y: 0 }}
         >
           <Button
+            asChild
             variant="default"
             type="button"
             className=" bg-primary-button py-6 transition-colors duration-300 ease-in-out cursor-pointer text-white text-md font-bold hover:bg-primary-color/90"
           >
-            Let&apos;s Connect
+            <a href="/contact">Let&apos;s Connect</a>
           </Button>
           <Button
             variant="outline"
@@ -92,9 +94,9 @@ export default async function Banner() {
           </Button>
         </AnimationWrapper>
       </div>
-      <div className="hidden lg:block card-shadow size-14 p-2 animate-bounce absolute bottom-8 left-[20%] rounded-full">
+      {/* <div className="hidden lg:block card-shadow size-14 p-2 animate-bounce absolute bottom-8 left-[20%] rounded-full">
         <ArrowDown className=" text-primary-color size-8" />
-      </div>
+      </div> */}
     </div>
   );
 }
