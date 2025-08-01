@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
-// import { FaGithub } from "react-icons/fa6";
+
 import { ProjectItemType } from "@/types";
 import AnimationWrapper from "../animation/animation-wrapper";
-// import AnimationWrapper from "../animation/animation-wrapper";
+import { FaGithub } from "react-icons/fa6";
 
 type ProjectItemProps = {
   index: number;
@@ -84,9 +84,11 @@ export default function ProjectItem({ index, project }: ProjectItemProps) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Code
+                Git
               </a>
-              {/* <FaGithub className=" size-4 text-primary-color group-hover:text-white" /> */}
+              <div>
+                <FaGithub className=" size-4 text-primary-color group-hover:text-white" />
+              </div>
             </Button>
           )}
         </div>

@@ -49,8 +49,6 @@ export default function ContactForm() {
     } catch (error) {
       console.log(error);
     }
-    console.log("submit");
-    console.log(data);
   };
 
   return (
