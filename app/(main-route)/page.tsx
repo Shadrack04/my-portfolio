@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import About from "@/components/about/about";
 import Banner from "@/components/banner/banner";
 
@@ -8,6 +9,7 @@ export default function Home() {
     <div className="pt-20 lg:pt-30 bg-foreground md:px-8">
       <div className=" 2xl:w-[86rem] mx-auto ">
         <div className="costume-padding sticky top-4">{/* <MyName /> */}</div>
+        <Toaster position="top-right" />
         <Banner />
         <About />
 

@@ -17,6 +17,7 @@ import {
   FormMessage,
 } from "../ui/form";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 export default function ContactForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -45,6 +46,7 @@ export default function ContactForm() {
       setIsLoading(false);
       if (res.ok) {
         form.reset();
+        toast.success("Message sent successfully");
       }
     } catch (error) {
       console.log(error);
