@@ -16,8 +16,10 @@ import {
   FormLabel,
   FormMessage,
 } from "../ui/form";
+import { useState } from "react";
 
 export default function ContactForm() {
+  const [isLoading, setIsLoading] = useState(false);
   const form = useForm<FormSchema>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -28,7 +30,25 @@ export default function ContactForm() {
     },
   });
 
-  const handleSubmit = (data: FormSchema) => {
+  const handleSubmit = async (data: FormSchema) => {
+    try {
+      setIsLoading(true);
+      const req = await fetch("https://formspree.io/f/mjkooqyv", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const res = await req.json();
+      setIsLoading(false);
+      if (res.ok) {
+        form.reset();
+      }
+    } catch (error) {
+      console.log(error);
+    }
     console.log("submit");
     console.log(data);
   };
@@ -123,10 +143,11 @@ export default function ContactForm() {
               />
             </div>
             <Button
+              disabled={isLoading}
               type="submit"
               className="w-full cursor-pointer bg-primary-color hover:bg-hover-color text-white text-xl"
             >
-              Send
+              {isLoading ? "Sending..." : "Send"}
             </Button>
           </form>
         </Form>
