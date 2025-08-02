@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import ThemeSwitch from "../theme-switch";
 
 export default function SocialLinks() {
   return (
@@ -13,6 +14,7 @@ export default function SocialLinks() {
       <div className="hover:text-primary-button cursor-pointer">
         <FaXTwitter />
       </div>
+      <ThemeSwitch />
     </div>
   );
 }
