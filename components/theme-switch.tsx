@@ -18,7 +18,7 @@ export default function ThemeSwitch() {
     >
       <span
         id={`${id}-off`}
-        className="group-data-[state=checked]:text-muted-foreground/70 flex-1 cursor-pointer text-right text-sm font-medium"
+        className="hover:text-primary-color text-primary-text group-data-[state=checked]:text-muted-foreground/70 flex-1 cursor-pointer text-right text-sm font-medium"
         aria-controls={id}
         onClick={() => setChecked(false)}
       >
@@ -33,7 +33,7 @@ export default function ThemeSwitch() {
       />
       <span
         id={`${id}-on`}
-        className="group-data-[state=unchecked]:text-muted-foreground/70 flex-1 cursor-pointer text-left text-sm font-medium"
+        className="hover:text-primary-color text-primary-text group-data-[state=unchecked]:text-muted-foreground/70 flex-1 cursor-pointer text-left text-sm font-medium"
         aria-controls={id}
         onClick={() => setChecked(true)}
       >
