@@ -9,6 +9,8 @@ export default function ThemeSwitch() {
   const id = useId();
   const [checked, setChecked] = useState(false);
 
+  document.documentElement.classList.toggle("dark", !checked);
+
   const toggleSwitch = () => setChecked((prev) => !prev);
 
   return (
