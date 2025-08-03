@@ -1,17 +1,27 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import { MoonIcon, SunIcon } from "lucide-react";
 
 import { Switch } from "@/components/ui/switch";
 
 export default function ThemeSwitch() {
   const id = useId();
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("theme") === "dark";
+    }
+    return false;
+  });
 
-  document.documentElement.classList.toggle("dark", !checked);
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", checked);
+    localStorage.setItem("theme", checked ? "dark" : "light");
+  }, [checked]);
 
-  const toggleSwitch = () => setChecked((prev) => !prev);
+  const toggleSwitch = async () => {
+    setChecked((prev) => !prev);
+  };
 
   return (
     <div
@@ -24,7 +34,7 @@ export default function ThemeSwitch() {
         aria-controls={id}
         onClick={() => setChecked(false)}
       >
-        <MoonIcon size={16} aria-hidden="true" />
+        <SunIcon size={16} aria-hidden="true" />
       </span>
       <Switch
         id={id}
@@ -39,7 +49,7 @@ export default function ThemeSwitch() {
         aria-controls={id}
         onClick={() => setChecked(true)}
       >
-        <SunIcon size={16} aria-hidden="true" />
+        <MoonIcon size={16} aria-hidden="true" />
       </span>
     </div>
   );
