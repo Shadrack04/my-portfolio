@@ -6,6 +6,7 @@ import { Button } from "../ui/button";
 import Typewriter from "./typewriter";
 import AnimationWrapper from "../animation/animation-wrapper";
 import { getBanner } from "@/sanity/sanity-utils";
+
 // import { ArrowDown } from "lucide-react";
 
 export default async function Banner() {

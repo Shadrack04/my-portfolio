@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #d1d8e0;
-  /* --foreground: #fcffee; */
+  /* --background: #d1d8e0; */
+  --background: #fcffee;
   --foreground: #fff;
   --layout-background: #2a2a2a;
   --primary-text: #2a2a2a;
@@ -35,21 +35,19 @@
   @apply lg:px-16 px-4;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --background: #2a2a2a;
-    --foreground: #1e1e1e;
-    --layout-background: #1e1e1e;
-    --primary-text: #ffffff;
-    --content-text: #e0e0e0ac;
-    --primary-button: #14b8a6;
-    --special-text: #14b8a6;
-    --secondary-button: #ef4444; */
+.dark {
+  --background: #2a2a2a;
+  --foreground: #1e1e1e;
+  --layout-background: #1e1e1e;
+  --primary-text: #ffffff;
+  --content-text: #e0e0e0ac;
+  --primary-button: #20bf6b;
+  --special-text: #20bf6b;
+  --secondary-button: #ef4444;
 
-    /* --background: #1e1e1e; */
-    /* --foreground: #f5f5f5; */
-    /* --layout-background: #2a2a2a; */
-  }
+  /* --background: #1e1e1e; */
+  /* --foreground: #f5f5f5; */
+  /* --layout-background: #2a2a2a; */
 }
 
 html {
