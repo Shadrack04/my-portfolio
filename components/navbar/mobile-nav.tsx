@@ -22,7 +22,9 @@ export default function MobileNav() {
       <DialogTitle></DialogTitle>
       <SheetTrigger asChild>
         {/* <Button variant="outline">Open</Button> */}
-        <Menu className=" md:hidden text-primary-color" />
+        <div className="fixed md:hidden p-2 w-12 h-12 bg-foreground rounded-xl bottom-6 right-1/2 translate-x-1/2 ">
+          <Menu className=" text-primary-color" />
+        </div>
       </SheetTrigger>
       <SheetContent
         side="bottom"

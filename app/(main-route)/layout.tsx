@@ -32,9 +32,8 @@ export default function RootLayout({
         className={` ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <div className=" md:hidden fixed bottom-6">
-          <MobileNav />
-        </div>
+
+        <MobileNav />
         <SocialLinks />
         {children}
       </body>
