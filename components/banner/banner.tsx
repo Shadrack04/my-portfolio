@@ -45,11 +45,18 @@ export default async function Banner() {
               <a href="/contact">Let&apos;s Connect</a>
             </Button>
             <Button
+              asChild
               variant="outline"
               type="button"
               className=" flex items-center bg-foreground cursor-pointer hover:bg-primary-button hover:text-white transition-colors duration-300 ease-in-out text-md font-bold border-primary-color border-1 text-primary-text"
             >
-              Resume
+              <a
+                href="/Shadrack-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
             </Button>
           </AnimationWrapper>
         </div>
@@ -87,11 +94,18 @@ export default async function Banner() {
             <a href="/contact">Let&apos;s Connect</a>
           </Button>
           <Button
+            asChild
             variant="outline"
             type="button"
             className=" flex items-center py-6 bg-foreground cursor-pointer hover:bg-primary-button hover:text-white transition-colors duration-300 ease-in-out text-md font-bold border-primary-color border-1 text-primary-text"
           >
-            Resume
+            <a
+              href="/Shadrack-resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
           </Button>
         </AnimationWrapper>
       </div>
