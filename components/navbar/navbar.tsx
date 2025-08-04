@@ -6,12 +6,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
-
   const pathname = usePathname();
 
   return (
-    <nav className=" flex items-center justify-center z-90">
-      <ul className="nav-shadow flex bg-foreground z-99 items-center text-[90%] justify-center fixed bottom-6 gap-4 md:gap-6 px-4 py-3 rounded-full">
+    <nav className=" flex bg-amber-400 items-center justify-center z-90">
+      <ul className="nav-shadow hidden md:flex bg-foreground z-99 items-center text-[90%] justify-center fixed bottom-6 gap-4 md:gap-6 px-4 py-3 rounded-full">
         <li
           className={` hover:text-primary-color text-primary-text transition-all duration-400 cursor-pointer hover:font-bold`}
         >
@@ -51,6 +50,9 @@ export default function Navbar() {
           </a>
         </li>
       </ul>
+      {/* <div className=" md:hidden m-2 fixed left-0 bottom-6">
+        <Database className=" text-primary-text size-4" />
+      </div> */}
     </nav>
   );
 }
