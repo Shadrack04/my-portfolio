@@ -3,7 +3,7 @@
 import { Database, Home, Send, UserRound } from "lucide-react";
 import React from "react";
 import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
-import ThemeSwitch from "../theme-switch";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
@@ -24,7 +24,7 @@ export default function MobileNav() {
       <SheetTrigger asChild>
         {/* <Button variant="outline">Open</Button> */}
         <div className="fixed md:hidden p-2 w-12 h-12 bg-foreground rounded-xl bottom-6 right-1/2 translate-x-1/2 ">
-          <Menu className=" text-primary-color" />
+          <Menu className=" z-99 text-primary-color" />
         </div>
       </SheetTrigger>
       <SheetContent
