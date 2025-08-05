@@ -87,7 +87,7 @@ export default function ProjectItem({ index, project }: ProjectItemProps) {
                 Git
               </a>
               <div>
-                <FaGithub className=" size-4 text-primary-color group-hover:text-white" />
+                <FaGithub className=" size-4 text-primary-text group-hover:text-white" />
               </div>
             </Button>
           )}
