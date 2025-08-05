@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { DialogTitle } from "@radix-ui/react-dialog";
+import ThemeToggle from "../theme-toggle";
 
 export default function MobileNav() {
   const pathname = usePathname();
@@ -88,7 +89,7 @@ export default function MobileNav() {
                 <FaXTwitter />
               </div>
             </div>
-            <ThemeSwitch />
+            <ThemeToggle />
           </div>
         </SheetFooter>
       </SheetContent>
