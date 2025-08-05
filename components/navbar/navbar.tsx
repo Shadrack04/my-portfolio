@@ -4,6 +4,7 @@ import React from "react";
 import { Database, Home, Send, UserRound } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ThemeToggle from "../theme-toggle";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -49,10 +50,8 @@ export default function Navbar() {
             Contact
           </a>
         </li>
+        <ThemeToggle />
       </ul>
-      {/* <div className=" md:hidden m-2 fixed left-0 bottom-6">
-        <Database className=" text-primary-text size-4" />
-      </div> */}
     </nav>
   );
 }
