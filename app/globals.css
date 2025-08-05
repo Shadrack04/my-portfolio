@@ -1,34 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  --background: #1e1e1e;
-  --foreground: #f5f5f5;
+  /* --background: #d1d8e0; */
+  --background: #fcffee;
+  --foreground: #fff;
   --layout-background: #2a2a2a;
-  --primary-text: #ffffff;
-  --content-text: #e0e0e0ac;
-  --primary-button: #14b8a6;
-  --special-text: #14b8a6;
-  --secondary-button: #ef4444;
+  --primary-text: #2a2a2a;
+  --content-text: #676767d7;
+  --hover-color: #26de81;
+  --primary-button: #20bf6b;
+  --primary-color: #20bf6b;
+  --special-text: #20bf6b;
+  --secondary-color: #ef4444;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-layout-background: var(--layout-background);
+  --color-primary-color: var(--primary-color);
 
   --color-primary-text: var(--primary-text);
   --color-content-text: var(--content-text);
   --color-special-text: var(--special-text);
   --color-primary-button: var(--primary-button);
-  --color-secondary-button: var(--secondary-button);
+  --color-secondary-color: var(--secondary-color);
+  --color-hover-color: var(--hover-color);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-  }
+.costume-padding {
+  @apply lg:px-16 px-4;
+}
+
+.dark {
+  --background: #2a2a2a;
+  --foreground: #1e1e1e;
+  --layout-background: #1e1e1e;
+  --primary-text: #ffffff;
+  --content-text: #e0e0e0ac;
+  --primary-button: #20bf6b;
+  --special-text: #20bf6b;
+  --secondary-button: #ef4444;
+
+  /* --background: #1e1e1e; */
+  /* --foreground: #f5f5f5; */
+  /* --layout-background: #2a2a2a; */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -36,5 +59,28 @@ body {
 }
 
 .nav-shadow {
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+.card-shadow {
+  /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.stack-card-shadow {
+  /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-bg {
+  background-image: url(../assets/images/bg-image.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* geist */

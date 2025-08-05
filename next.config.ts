@@ -10,13 +10,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.(png|jpe?g|gif|webp|svg)$/i,
-      type: "asset/resource",
-    });
-
-    return config;
+  /* config options here */
+  images: {
+    domains: ["cdn.sanity.io"],
   },
 };
 
