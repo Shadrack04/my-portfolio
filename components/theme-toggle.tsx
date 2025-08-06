@@ -31,7 +31,7 @@ export default function ThemeToggle() {
   }
 
   return (
-    <div onClick={toggleTheme}>
+    <div onClick={toggleTheme} className=" size-6">
       {isDarkTheme ? (
         <SunIcon size={16} aria-hidden="true" className=" text-primary-text" />
       ) : (

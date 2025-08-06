@@ -79,13 +79,13 @@ export default function MobileNav() {
         <SheetFooter>
           <div className="  flex z-99 bg-background items-center text-[90%] justify-between">
             <div className=" flex gap-8 items-center">
-              <div className=" hover:text-primary-color text-primary-text cursor-pointer">
+              <div className=" size-6 hover:text-primary-color text-primary-text cursor-pointer">
                 <FaGithub className=" size-6" />
               </div>
-              <div className="hover:text-primary-color text-primary-text cursor-pointer">
+              <div className=" size-6 hover:text-primary-color text-primary-text cursor-pointer">
                 <FaLinkedinIn />
               </div>
-              <div className="hover:text-primary-color text-primary-text cursor-pointer">
+              <div className="size-6 hover:text-primary-color text-primary-text cursor-pointer">
                 <FaXTwitter />
               </div>
             </div>
